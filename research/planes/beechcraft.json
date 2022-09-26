@@ -1,0 +1,136 @@
+[
+    {
+        "name": "Beechcraft 1900D",
+        "shortcut": "bc1900d",
+        "price": 111024,
+        "speed": 480,
+        "range": 2776,
+        "runway": 4500,
+        "capacity": 19,
+        "type": "pax",
+        "picture": "beech1900.png",
+        "manufacturer": "Beechcraft",
+        "fuel": 15,
+        "co2": 0.19,
+        "A_check": {
+            "price": 15544,
+            "time": 490
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "PW PT6A-67D",
+                "fuel": 13.65,
+                "co2": 0.19,
+                "speed": 470
+            }
+        ]
+    },
+    {
+        "name": "Beechcraft 1900",
+        "shortcut": "bc1900",
+        "price": 119896,
+        "speed": 495,
+        "range": 2907,
+        "runway": 4500,
+        "capacity": 19,
+        "type": "pax",
+        "picture": "beech1900.png",
+        "manufacturer": "Beechcraft",
+        "fuel": 9,
+        "co2": 0.11,
+        "A_check": {
+            "price": 21582,
+            "time": 380
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "PW PT6A-67",
+                "fuel": 9.36,
+                "co2": 0.11,
+                "speed": 500
+            }
+        ]
+    },
+    {
+        "name": "King Air 350i",
+        "shortcut": "ka350i",
+        "price": 187000,
+        "speed": 580,
+        "range": 3340,
+        "runway": 3300,
+        "capacity": 11,
+        "type": "pax",
+        "picture": "kingair.png",
+        "manufacturer": "Beechcraft",
+        "fuel": 16,
+        "co2": 0.15,
+        "A_check": {
+            "price": 17766,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "Pratt & Whitney Canada PT6A-66",
+                "fuel": 16.16,
+                "co2": 0.15,
+                "speed": 626
+            }
+        ]
+    },
+    {
+        "name": "Beechcraft 1900C",
+        "shortcut": "bc1900c",
+        "price": 323000,
+        "speed": 570,
+        "range": 2500,
+        "runway": 4500,
+        "capacity": 19,
+        "type": "pax",
+        "picture": "beech1900.png",
+        "manufacturer": "Beechcraft",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 14346,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "PW PT6A-65B",
+                "fuel": 16.96,
+                "co2": 0.20,
+                "speed": 621
+            },
+            {
+                "name": "PW PT6A-65",
+                "fuel": 15.20,
+                "co2": 0.20,
+                "speed": 553
+            }
+        ]
+    }
+]

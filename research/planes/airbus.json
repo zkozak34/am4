@@ -1,0 +1,1441 @@
+[
+    {
+        "name": "A220-100",
+        "price": 3234528,
+        "speed": 871,
+        "range": 5750,
+        "runway": 4790,
+        "capacity": 135,
+        "type": "pax",
+        "picture": "a220.png",
+        "manufacturer": "Airbus",
+        "fuel": 10,
+        "co2": 0.09,
+        "A_check": {
+            "price": 307280,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 3,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "PW1519G",
+                "fuel": 11.00,
+                "co2": 0.09,
+                "speed": 949
+            },
+            {
+                "name": "PW1521G",
+                "fuel": 10.60,
+                "co2": 0.09,
+                "speed": 897
+            },
+            {
+                "name": "PW1524G",
+                "fuel": 10.80,
+                "co2": 0.09,
+                "speed": 949
+            },
+            {
+                "name": "PW1525G",
+                "fuel": 10.60,
+                "co2": 0.09,
+                "speed": 967
+            }
+        ]
+    },
+    {
+        "name": "A318-100",
+        "price": 4380431,
+        "speed": 780,
+        "range": 6020,
+        "runway": 6500,
+        "capacity": 117,
+        "type": "pax",
+        "picture": "a318.png",
+        "manufacturer": "Airbus",
+        "fuel": 8,
+        "co2": 0.1,
+        "A_check": {
+            "price": 350434,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "CFM56-5",
+                "fuel": 8.40,
+                "co2": 0.10,
+                "speed": 835
+            },
+            {
+                "name": "PW6122A",
+                "fuel": 7.44,
+                "co2": 0.10,
+                "speed": 764
+            }
+        ]
+    },
+    {
+        "name": "A319-200",
+        "price": 5093525,
+        "speed": 780,
+        "range": 7000,
+        "runway": 6850,
+        "capacity": 117,
+        "type": "pax",
+        "picture": "a319.png",
+        "manufacturer": "Airbus",
+        "fuel": 8,
+        "co2": 0.1,
+        "A_check": {
+            "price": 585756,
+            "time": 470
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM56-5",
+                "fuel": 8.40,
+                "co2": 0.10,
+                "speed": 835
+            },
+            {
+                "name": "IAE V2500",
+                "fuel": 7.76,
+                "co2": 0.10,
+                "speed": 757
+            }
+        ]
+    },
+    {
+        "name": "A220-300",
+        "price": 5619831,
+        "speed": 871,
+        "range": 6110,
+        "runway": 4900,
+        "capacity": 160,
+        "type": "pax",
+        "picture": "a220.png",
+        "manufacturer": "Airbus",
+        "fuel": 12,
+        "co2": 0.1,
+        "A_check": {
+            "price": 533884,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 3,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "PW1519G",
+                "fuel": 13.20,
+                "co2": 0.10,
+                "speed": 949
+            },
+            {
+                "name": "PW1521G",
+                "fuel": 12.72,
+                "co2": 0.10,
+                "speed": 897
+            },
+            {
+                "name": "PW1524G",
+                "fuel": 12.96,
+                "co2": 0.10,
+                "speed": 949
+            },
+            {
+                "name": "PW1525G",
+                "fuel": 12.72,
+                "co2": 0.10,
+                "speed": 967
+            }
+        ]
+    },
+    {
+        "name": "A320-200",
+        "price": 6770196,
+        "speed": 823,
+        "range": 5700,
+        "runway": 6500,
+        "capacity": 164,
+        "type": "pax",
+        "picture": "a320.png",
+        "manufacturer": "Airbus",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 1049380,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM56-5",
+                "fuel": 11.55,
+                "co2": 0.14,
+                "speed": 881
+            },
+            {
+                "name": "IAE V2500",
+                "fuel": 10.67,
+                "co2": 0.14,
+                "speed": 798
+            }
+        ]
+    },
+    {
+        "name": "A319NEO",
+        "price": 6845472,
+        "speed": 855,
+        "range": 6950,
+        "runway": 6000,
+        "capacity": 160,
+        "type": "pax",
+        "picture": "a319neo.png",
+        "manufacturer": "Airbus",
+        "fuel": 11,
+        "co2": 0.08,
+        "A_check": {
+            "price": 650320,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 2,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "PW PW1100G",
+                "fuel": 11.00,
+                "co2": 0.08,
+                "speed": 949
+            },
+            {
+                "name": "LEAP-1A",
+                "fuel": 10.45,
+                "co2": 0.08,
+                "speed": 812
+            }
+        ]
+    },
+    {
+        "name": "A321-200",
+        "price": 8154432,
+        "speed": 780,
+        "range": 6000,
+        "runway": 7250,
+        "capacity": 220,
+        "type": "pax",
+        "picture": "a321-200.png",
+        "manufacturer": "Airbus",
+        "fuel": 18,
+        "co2": 0.15,
+        "A_check": {
+            "price": 1019304,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM56-5",
+                "fuel": 18.90,
+                "co2": 0.15,
+                "speed": 835
+            },
+            {
+                "name": "IAE V2500",
+                "fuel": 17.46,
+                "co2": 0.15,
+                "speed": 757
+            }
+        ]
+    },
+    {
+        "name": "A300B2-200",
+        "price": 11605297,
+        "speed": 847,
+        "range": 3430,
+        "runway": 7625,
+        "capacity": 269,
+        "type": "pax",
+        "picture": "a300.png",
+        "manufacturer": "Airbus",
+        "fuel": 18,
+        "co2": 0.22,
+        "A_check": {
+            "price": 2611192,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "PW JT9D-9",
+                "fuel": 16.38,
+                "co2": 0.22,
+                "speed": 762
+            },
+            {
+                "name": "CF6-50C",
+                "fuel": 19.08,
+                "co2": 0.22,
+                "speed": 864
+            }
+        ]
+    },
+    {
+        "name": "A320-NEO",
+        "price": 14770196,
+        "speed": 850,
+        "range": 7000,
+        "runway": 6500,
+        "capacity": 164,
+        "type": "pax",
+        "picture": "a320.png",
+        "manufacturer": "Airbus",
+        "fuel": 7,
+        "co2": 0.09,
+        "A_check": {
+            "price": 590808,
+            "time": 540
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM LEAP-X",
+                "fuel": 7.70,
+                "co2": 0.09,
+                "speed": 884
+            },
+            {
+                "name": "PW PW1100G",
+                "fuel": 7.07,
+                "co2": 0.09,
+                "speed": 893
+            }
+        ]
+    },
+    {
+        "name": "A340-200",
+        "price": 15688189,
+        "speed": 896,
+        "range": 14800,
+        "runway": 9810,
+        "capacity": 239,
+        "type": "pax",
+        "picture": "a340-200.png",
+        "manufacturer": "Airbus",
+        "fuel": 18,
+        "co2": 0.22,
+        "A_check": {
+            "price": 2039464,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 8,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CFM56-5C2",
+                "fuel": 18.54,
+                "co2": 0.22,
+                "speed": 932
+            },
+            {
+                "name": "CFM56-5C3",
+                "fuel": 18.18,
+                "co2": 0.22,
+                "speed": 950
+            },
+            {
+                "name": "CFM56-5C4",
+                "fuel": 18.00,
+                "co2": 0.22,
+                "speed": 869
+            }
+        ]
+    },
+    {
+        "name": "A300B4-200",
+        "price": 21315852,
+        "speed": 847,
+        "range": 6300,
+        "runway": 7625,
+        "capacity": 269,
+        "type": "pax",
+        "picture": "a300.png",
+        "manufacturer": "Airbus",
+        "fuel": 18,
+        "co2": 0.22,
+        "A_check": {
+            "price": 3943432,
+            "time": 330
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "PW JT9D-9",
+                "fuel": 16.38,
+                "co2": 0.22,
+                "speed": 762
+            },
+            {
+                "name": "CF6-50C",
+                "fuel": 19.08,
+                "co2": 0.22,
+                "speed": 864
+            }
+        ]
+    },
+    {
+        "name": "A321-NEO",
+        "price": 22760999,
+        "speed": 850,
+        "range": 7250,
+        "runway": 6500,
+        "capacity": 189,
+        "type": "pax",
+        "picture": "a321-neo.png",
+        "manufacturer": "Airbus",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 910440,
+            "time": 550
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM LEAP-X",
+                "fuel": 11.00,
+                "co2": 0.12,
+                "speed": 884
+            },
+            {
+                "name": "PW PW1100G",
+                "fuel": 10.10,
+                "co2": 0.12,
+                "speed": 893
+            }
+        ]
+    },
+    {
+        "name": "A300-600",
+        "price": 24683135,
+        "speed": 875,
+        "range": 6670,
+        "runway": 7625,
+        "capacity": 267,
+        "type": "pax",
+        "picture": "a300.png",
+        "manufacturer": "Airbus",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 4196132,
+            "time": 330
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2A1",
+                "fuel": 18.02,
+                "co2": 0.21,
+                "speed": 963
+            },
+            {
+                "name": "CF6-80C2A5",
+                "fuel": 15.47,
+                "co2": 0.21,
+                "speed": 814
+            },
+            {
+                "name": "PW-4156",
+                "fuel": 17.00,
+                "co2": 0.21,
+                "speed": 814
+            },
+            {
+                "name": "PW-4158",
+                "fuel": 17.17,
+                "co2": 0.21,
+                "speed": 980
+            }
+        ]
+    },
+    {
+        "name": "A310-200",
+        "price": 27466560,
+        "speed": 850,
+        "range": 6800,
+        "runway": 7000,
+        "capacity": 280,
+        "type": "pax",
+        "picture": "a310.png",
+        "manufacturer": "Airbus",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 5081314,
+            "time": 340
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CF6-80A3",
+                "fuel": 17.12,
+                "co2": 0.20,
+                "speed": 918
+            },
+            {
+                "name": "CF6-80C2A2",
+                "fuel": 15.68,
+                "co2": 0.20,
+                "speed": 765
+            },
+            {
+                "name": "CF6-80C2A8",
+                "fuel": 14.88,
+                "co2": 0.20,
+                "speed": 816
+            },
+            {
+                "name": "JT9D-7R4D1",
+                "fuel": 17.28,
+                "co2": 0.20,
+                "speed": 935
+            },
+            {
+                "name": "PW 4152",
+                "fuel": 16.80,
+                "co2": 0.20,
+                "speed": 918
+            },
+            {
+                "name": "PW 4156",
+                "fuel": 16.80,
+                "co2": 0.20,
+                "speed": 918
+            }
+        ]
+    },
+    {
+        "name": "A300-600R",
+        "price": 27773153,
+        "speed": 875,
+        "range": 7505,
+        "runway": 7625,
+        "capacity": 267,
+        "type": "pax",
+        "picture": "a300.png",
+        "manufacturer": "Airbus",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 4304838,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2A1",
+                "fuel": 18.02,
+                "co2": 0.21,
+                "speed": 963
+            },
+            {
+                "name": "CF6-80C2A5",
+                "fuel": 15.47,
+                "co2": 0.21,
+                "speed": 814
+            },
+            {
+                "name": "PW 4156",
+                "fuel": 17.00,
+                "co2": 0.21,
+                "speed": 814
+            },
+            {
+                "name": "PW 4158",
+                "fuel": 17.17,
+                "co2": 0.21,
+                "speed": 980
+            }
+        ]
+    },
+    {
+        "name": "A321-XLR",
+        "price": 29990999,
+        "speed": 876,
+        "range": 8900,
+        "runway": 7500,
+        "capacity": 220,
+        "type": "pax",
+        "picture": "a321-xlr.png",
+        "manufacturer": "Airbus",
+        "fuel": 14,
+        "co2": 0.16,
+        "A_check": {
+            "price": 1020000,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM LEAP-X",
+                "fuel": 15.40,
+                "co2": 0.16,
+                "speed": 911
+            },
+            {
+                "name": "PW PW1100G",
+                "fuel": 14.14,
+                "co2": 0.16,
+                "speed": 920
+            }
+        ]
+    },
+    {
+        "name": "A310-300",
+        "price": 38776320,
+        "speed": 850,
+        "range": 9600,
+        "runway": 6000,
+        "capacity": 280,
+        "type": "pax",
+        "picture": "a310.png",
+        "manufacturer": "Airbus",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 6591974,
+            "time": 340
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CF6-80A3",
+                "fuel": 17.12,
+                "co2": 0.20,
+                "speed": 918
+            },
+            {
+                "name": "CF6-80C2A2",
+                "fuel": 15.68,
+                "co2": 0.20,
+                "speed": 765
+            },
+            {
+                "name": "CF6-80C2A8",
+                "fuel": 14.88,
+                "co2": 0.20,
+                "speed": 816
+            },
+            {
+                "name": "JT9D-7R4D1",
+                "fuel": 17.28,
+                "co2": 0.20,
+                "speed": 935
+            },
+            {
+                "name": "PW 4152",
+                "fuel": 16.80,
+                "co2": 0.20,
+                "speed": 918
+            },
+            {
+                "name": "PW 4156",
+                "fuel": 16.80,
+                "co2": 0.20,
+                "speed": 918
+            }
+        ]
+    },
+    {
+        "name": "A330-300",
+        "price": 43330073,
+        "speed": 871,
+        "range": 10000,
+        "runway": 9090,
+        "capacity": 335,
+        "type": "pax",
+        "picture": "a330-300.png",
+        "manufacturer": "Airbus",
+        "fuel": 18,
+        "co2": 0.22,
+        "A_check": {
+            "price": 6066210,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 11,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CF6-80E1",
+                "fuel": 16.74,
+                "co2": 0.22,
+                "speed": 801
+            },
+            {
+                "name": "PW4000",
+                "fuel": 18.00,
+                "co2": 0.22,
+                "speed": 862
+            },
+            {
+                "name": "RR Trent 700",
+                "fuel": 19.26,
+                "co2": 0.22,
+                "speed": 958
+            }
+        ]
+    },
+    {
+        "name": "A330-200",
+        "price": 43631874,
+        "speed": 871,
+        "range": 12500,
+        "runway": 9090,
+        "capacity": 253,
+        "type": "pax",
+        "picture": "a330-200.png",
+        "manufacturer": "Airbus",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 4581346,
+            "time": 460
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 8,
+            "engineers": 2,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "CF6-80E1",
+                "fuel": 15.81,
+                "co2": 0.21,
+                "speed": 801
+            },
+            {
+                "name": "PW4000",
+                "fuel": 17.00,
+                "co2": 0.21,
+                "speed": 862
+            },
+            {
+                "name": "RR Trent 700",
+                "fuel": 18.19,
+                "co2": 0.21,
+                "speed": 958
+            }
+        ]
+    },
+    {
+        "name": "A340-300",
+        "price": 55469568,
+        "speed": 896,
+        "range": 14000,
+        "runway": 10200,
+        "capacity": 335,
+        "type": "pax",
+        "picture": "a340-300.png",
+        "manufacturer": "Airbus",
+        "fuel": 20,
+        "co2": 0.25,
+        "A_check": {
+            "price": 7211044,
+            "time": 470
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM56-5C2",
+                "fuel": 20.60,
+                "co2": 0.25,
+                "speed": 932
+            },
+            {
+                "name": "CFM56-5C3",
+                "fuel": 20.20,
+                "co2": 0.25,
+                "speed": 950
+            },
+            {
+                "name": "CFM56-5C4",
+                "fuel": 20.00,
+                "co2": 0.25,
+                "speed": 869
+            },
+            {
+                "name": "CFM56-5C4P",
+                "fuel": 21.40,
+                "co2": 0.25,
+                "speed": 1004
+            }
+        ]
+    },
+    {
+        "name": "A350-800",
+        "price": 62240270,
+        "speed": 945,
+        "range": 14500,
+        "runway": 8760,
+        "capacity": 270,
+        "type": "pax",
+        "picture": "a350.png",
+        "manufacturer": "Airbus",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 2800812,
+            "time": 530
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Trent XWB",
+                "fuel": 15.98,
+                "co2": 0.21,
+                "speed": 860
+            }
+        ]
+    },
+    {
+        "name": "A340-500",
+        "price": 66262163,
+        "speed": 907,
+        "range": 14500,
+        "runway": 10200,
+        "capacity": 313,
+        "type": "pax",
+        "picture": "a340-500.png",
+        "manufacturer": "Airbus",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 5632284,
+            "time": 480
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "RR Trent 553",
+                "fuel": 17.10,
+                "co2": 0.24,
+                "speed": 862
+            }
+        ]
+    },
+    {
+        "name": "A340-600",
+        "price": 69887329,
+        "speed": 907,
+        "range": 14630,
+        "runway": 10200,
+        "capacity": 380,
+        "type": "pax",
+        "picture": "a340-600.png",
+        "manufacturer": "Airbus",
+        "fuel": 22,
+        "co2": 0.28,
+        "A_check": {
+            "price": 6289860,
+            "time": 460
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 11,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RR Trent 556",
+                "fuel": 20.68,
+                "co2": 0.28,
+                "speed": 871
+            }
+        ]
+    },
+    {
+        "name": "A350-900",
+        "price": 70503048,
+        "speed": 945,
+        "range": 14500,
+        "runway": 8760,
+        "capacity": 314,
+        "type": "pax",
+        "picture": "a350.png",
+        "manufacturer": "Airbus",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 2820122,
+            "time": 550
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Trent XWB",
+                "fuel": 15.98,
+                "co2": 0.21,
+                "speed": 860
+            }
+        ]
+    },
+    {
+        "name": "A350-1000",
+        "price": 77538384,
+        "speed": 945,
+        "range": 14800,
+        "runway": 8760,
+        "capacity": 350,
+        "type": "pax",
+        "picture": "a350-1000.png",
+        "manufacturer": "Airbus",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 3101536,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 11,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Trent XWB",
+                "fuel": 15.98,
+                "co2": 0.21,
+                "speed": 860
+            }
+        ]
+    },
+    {
+        "name": "A350-900R",
+        "price": 82723576,
+        "speed": 945,
+        "range": 14500,
+        "runway": 8760,
+        "capacity": 314,
+        "type": "pax",
+        "picture": "a350.png",
+        "manufacturer": "Airbus",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 3308944,
+            "time": 520
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Trent XWB",
+                "fuel": 15.98,
+                "co2": 0.21,
+                "speed": 860
+            }
+        ]
+    },
+    {
+        "name": "A330-800neo",
+        "price": 85325684,
+        "speed": 880,
+        "range": 13900,
+        "runway": 9500,
+        "capacity": 406,
+        "type": "pax",
+        "picture": "a330neo.png",
+        "manufacturer": "Airbus",
+        "fuel": 12,
+        "co2": 0.15,
+        "A_check": {
+            "price": 3413028,
+            "time": 510
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Trent 7000",
+                "fuel": 12.00,
+                "co2": 0.15,
+                "speed": 801
+            }
+        ]
+    },
+    {
+        "name": "A330-900neo",
+        "price": 109315468,
+        "speed": 880,
+        "range": 12130,
+        "runway": 9950,
+        "capacity": 440,
+        "type": "pax",
+        "picture": "a330neo.png",
+        "manufacturer": "Airbus",
+        "fuel": 13,
+        "co2": 0.16,
+        "A_check": {
+            "price": 4372618,
+            "time": 510
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Trent 7000",
+                "fuel": 13.00,
+                "co2": 0.16,
+                "speed": 801
+            }
+        ]
+    },
+    {
+        "name": "A380-800",
+        "price": 215629503,
+        "speed": 945,
+        "range": 14500,
+        "runway": 9680,
+        "capacity": 600,
+        "type": "pax",
+        "picture": "a380.png",
+        "manufacturer": "Airbus",
+        "fuel": 21,
+        "co2": 0.16,
+        "A_check": {
+            "price": 12937770,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 18,
+            "engineers": 6,
+            "tech": 16
+        },
+        "engines": [
+            {
+                "name": "GP7270",
+                "fuel": 22.89,
+                "co2": 0.16,
+                "speed": 964
+            },
+            {
+                "name": "RR Trent 970",
+                "fuel": 18.90,
+                "co2": 0.16,
+                "speed": 917
+            },
+            {
+                "name": "RR Trent 972",
+                "fuel": 22.26,
+                "co2": 0.16,
+                "speed": 1049
+            }
+        ]
+    },
+    {
+        "name": "A310-300F",
+        "price": 7936782,
+        "speed": 850,
+        "range": 7330,
+        "runway": 6000,
+        "capacity": 66000,
+        "type": "cargo",
+        "picture": "a310.png",
+        "manufacturer": "Airbus",
+        "fuel": 21,
+        "co2": 0.15,
+        "A_check": {
+            "price": 1333200,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2A2",
+                "fuel": 20.58,
+                "co2": 0.15,
+                "speed": 765
+            },
+            {
+                "name": "CF6-80C2A8",
+                "fuel": 19.53,
+                "co2": 0.15,
+                "speed": 816
+            }
+        ]
+    },
+    {
+        "name": "A400M",
+        "price": 12823606,
+        "speed": 780,
+        "range": 3298,
+        "runway": 3215,
+        "capacity": 81600,
+        "type": "cargo",
+        "picture": "a400m.png",
+        "manufacturer": "Airbus",
+        "fuel": 24,
+        "co2": 0.16,
+        "A_check": {
+            "price": 1648320,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 4,
+            "crew": 0,
+            "engineers": 1,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "Europrop TP400-D6",
+                "fuel": 24.00,
+                "co2": 0.16,
+                "speed": 780
+            },
+            {
+                "name": "GE CF6-80C2b5F",
+                "fuel": 24.24,
+                "co2": 0.16,
+                "speed": 827
+            },
+            {
+                "name": "PW4062",
+                "fuel": 23.04,
+                "co2": 0.16,
+                "speed": 757
+            },
+            {
+                "name": "RR RB211-524",
+                "fuel": 23.76,
+                "co2": 0.16,
+                "speed": 772
+            }
+        ]
+    },
+    {
+        "name": "A300-600F",
+        "price": 39465463,
+        "speed": 829,
+        "range": 4850,
+        "runway": 7625,
+        "capacity": 195000,
+        "type": "cargo",
+        "picture": "a300.png",
+        "manufacturer": "Airbus",
+        "fuel": 42,
+        "co2": 0.18,
+        "A_check": {
+            "price": 3939000,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 1,
+            "engineers": 2,
+            "tech": 11
+        },
+        "engines": [
+            {
+                "name": "GE CF5-50A",
+                "fuel": 41.58,
+                "co2": 0.18,
+                "speed": 763
+            }
+        ]
+    },
+    {
+        "name": "A330-200F",
+        "price": 62565894,
+        "speed": 871,
+        "range": 7400,
+        "runway": 9090,
+        "capacity": 270000,
+        "type": "cargo",
+        "picture": "a330-200f.png",
+        "manufacturer": "Airbus",
+        "fuel": 26,
+        "co2": 0.2,
+        "A_check": {
+            "price": 5454000,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "RR Trent 700",
+                "fuel": 26.26,
+                "co2": 0.20,
+                "speed": 915
+            },
+            {
+                "name": "PW4000",
+                "fuel": 26.00,
+                "co2": 0.20,
+                "speed": 862
+            }
+        ]
+    },
+    {
+        "name": "A380-800F",
+        "price": 298765348,
+        "speed": 945,
+        "range": 10400,
+        "runway": 9680,
+        "capacity": 330000,
+        "type": "cargo",
+        "picture": "a380.png",
+        "manufacturer": "Airbus",
+        "fuel": 32,
+        "co2": 0.2,
+        "A_check": {
+            "price": 6666000,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "GP7277",
+                "fuel": 30.72,
+                "co2": 0.20,
+                "speed": 945
+            },
+            {
+                "name": "Trent 977/B",
+                "fuel": 28.80,
+                "co2": 0.20,
+                "speed": 907
+            }
+        ]
+    },
+    {
+        "name": "A300-600ST",
+        "price": 21999869,
+        "speed": 876,
+        "range": 4632,
+        "runway": 10000,
+        "capacity": 103617,
+        "type": "cargo",
+        "picture": "beluga.png",
+        "manufacturer": "Airbus",
+        "fuel": 27,
+        "co2": 0.18,
+        "A_check": {
+            "price": 3121000,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 2,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "GE90-110B1",
+                "fuel": 27.00,
+                "co2": 0.18,
+                "speed": 876
+            }
+        ]
+    },
+    {
+        "name": "A320-VIP",
+        "price": 22760999,
+        "speed": 936,
+        "range": 9500,
+        "runway": 6500,
+        "capacity": 160,
+        "type": "vip",
+        "picture": "a320vip.png",
+        "manufacturer": "Airbus",
+        "fuel": 9,
+        "co2": 0.09,
+        "A_check": {
+            "price": 295404,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RR Trent XWB",
+                "fuel": 8.80,
+                "speed": 936
+            }
+        ]
+    },
+    {
+        "name": "A350-900VIP",
+        "price": 91723576,
+        "speed": 848,
+        "range": 18000,
+        "runway": 8760,
+        "capacity": 300,
+        "type": "vip",
+        "picture": "a350.png",
+        "manufacturer": "Airbus",
+        "fuel": 13,
+        "co2": 0.18,
+        "A_check": {
+            "price": 1954321,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 3,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "RR Trent XWB",
+                "fuel": 13.16,
+                "speed": 848
+            }
+        ]
+    }
+]

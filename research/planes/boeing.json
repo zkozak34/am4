@@ -1,0 +1,2141 @@
+[
+    {
+        "name": "B377 Stratocruiser",
+        "shortcut": "stratocruiser",
+        "price": 788066,
+        "speed": 604,
+        "range": 6760,
+        "runway": 8600,
+        "capacity": 117,
+        "type": "pax",
+        "picture": "stratocruiser.png",
+        "manufacturer": "Boeing",
+        "fuel": 29,
+        "co2": 0.3,
+        "A_check": {
+            "price": 74866,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 3,
+            "tech": 9
+        },
+        "engines": [
+            {
+                "name": "PW R-4360",
+                "fuel": 29.00,
+                "co2": 0.30,
+                "speed": 574
+            }
+        ]
+    },
+    {
+        "name": "B727-100",
+        "price": 1364217,
+        "speed": 926,
+        "range": 3056,
+        "runway": 8300,
+        "capacity": 131,
+        "type": "pax",
+        "picture": "b727-100.png",
+        "manufacturer": "Boeing",
+        "fuel": 13,
+        "co2": 0.17,
+        "A_check": {
+            "price": 129600,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 6,
+            "engineers": 2,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "PW JT8D-9",
+                "fuel": 13.00,
+                "co2": 0.17,
+                "speed": 1009
+            },
+            {
+                "name": "PW JT8D-7",
+                "fuel": 12.48,
+                "co2": 0.17,
+                "speed": 917
+            }
+        ]
+    },
+    {
+        "name": "B737-100",
+        "price": 1514699,
+        "speed": 780,
+        "range": 3440,
+        "runway": 7550,
+        "capacity": 118,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 12,
+        "co2": 0.15,
+        "A_check": {
+            "price": 386248,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 7
+        },
+        "engines": [
+            {
+                "name": "PW JT8D-7",
+                "fuel": 12.12,
+                "co2": 0.15,
+                "speed": 796
+            }
+        ]
+    },
+    {
+        "name": "B737-200C",
+        "price": 1580983,
+        "speed": 780,
+        "range": 4622,
+        "runway": 7550,
+        "capacity": 110,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 14,
+        "co2": 0.18,
+        "A_check": {
+            "price": 403150,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "PW JT8D-7",
+                "fuel": 13.44,
+                "co2": 0.18,
+                "speed": 772
+            },
+            {
+                "name": "PW JT8D-9",
+                "fuel": 15.12,
+                "co2": 0.18,
+                "speed": 796
+            },
+            {
+                "name": "PW JT8D-9A",
+                "fuel": 14.84,
+                "co2": 0.18,
+                "speed": 788
+            }
+        ]
+    },
+    {
+        "name": "B737-500",
+        "price": 1856353,
+        "speed": 780,
+        "range": 4449,
+        "runway": 7550,
+        "capacity": 123,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 13,
+        "co2": 0.16,
+        "A_check": {
+            "price": 297016,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 2,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "CFM-56-3B-1",
+                "fuel": 11.70,
+                "co2": 0.16,
+                "speed": 718
+            }
+        ]
+    },
+    {
+        "name": "B737-200Adv",
+        "price": 1893733,
+        "speed": 780,
+        "range": 5473,
+        "runway": 7550,
+        "capacity": 102,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 13,
+        "co2": 0.16,
+        "A_check": {
+            "price": 454496,
+            "time": 390
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 1,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "PW JT8D-15",
+                "fuel": 12.48,
+                "co2": 0.16,
+                "speed": 741
+            },
+            {
+                "name": "PW JT8D-15A",
+                "fuel": 14.17,
+                "co2": 0.16,
+                "speed": 874
+            },
+            {
+                "name": "PW JT8D-17",
+                "fuel": 12.22,
+                "co2": 0.16,
+                "speed": 772
+            },
+            {
+                "name": "PW JT8D-17A",
+                "fuel": 12.09,
+                "co2": 0.16,
+                "speed": 733
+            },
+            {
+                "name": "PW JT8D-17AR",
+                "fuel": 13.39,
+                "co2": 0.16,
+                "speed": 858
+            },
+            {
+                "name": "PW JT8D-17R",
+                "fuel": 11.83,
+                "co2": 0.16,
+                "speed": 757
+            }
+        ]
+    },
+    {
+        "name": "B737-200",
+        "price": 2217362,
+        "speed": 855,
+        "range": 4170,
+        "runway": 7550,
+        "capacity": 130,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 12,
+        "co2": 0.15,
+        "A_check": {
+            "price": 598688,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 7
+        },
+        "engines": [
+            {
+                "name": "PW JT8D-15A",
+                "fuel": 13.08,
+                "co2": 0.15,
+                "speed": 958
+            }
+        ]
+    },
+    {
+        "name": "B717-200",
+        "price": 2238611,
+        "speed": 810,
+        "range": 3815,
+        "runway": 6450,
+        "capacity": 134,
+        "type": "pax",
+        "picture": "b717.png",
+        "manufacturer": "Boeing",
+        "fuel": 12,
+        "co2": 0.11,
+        "A_check": {
+            "price": 235054,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR BR715-A1-30",
+                "fuel": 8.64,
+                "co2": 0.11,
+                "speed": 761
+            },
+            {
+                "name": "RR BR715-C1-30",
+                "fuel": 8.46,
+                "co2": 0.11,
+                "speed": 761
+            }
+        ]
+    },
+    {
+        "name": "B737-600",
+        "price": 2460985,
+        "speed": 828,
+        "range": 5648,
+        "runway": 7550,
+        "capacity": 110,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 12,
+        "co2": 0.15,
+        "A_check": {
+            "price": 258404,
+            "time": 480
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 1,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "CFM 56-7",
+                "fuel": 11.40,
+                "co2": 0.15,
+                "speed": 762
+            }
+        ]
+    },
+    {
+        "name": "B737-300",
+        "price": 2464401,
+        "speed": 855,
+        "range": 4707,
+        "runway": 7550,
+        "capacity": 128,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 12,
+        "co2": 0.15,
+        "A_check": {
+            "price": 431270,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "CFM56-3",
+                "fuel": 12.00,
+                "co2": 0.15,
+                "speed": 795
+            }
+        ]
+    },
+    {
+        "name": "B737-700C",
+        "price": 3118288,
+        "speed": 823,
+        "range": 5490,
+        "runway": 7550,
+        "capacity": 120,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 343012,
+            "time": 480
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "CFM56-7",
+                "fuel": 11.11,
+                "co2": 0.14,
+                "speed": 831
+            }
+        ]
+    },
+    {
+        "name": "B737-400",
+        "price": 3282313,
+        "speed": 780,
+        "range": 4010,
+        "runway": 7550,
+        "capacity": 159,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 14,
+        "co2": 0.18,
+        "A_check": {
+            "price": 541582,
+            "time": 330
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CFM-56-3B-2",
+                "fuel": 14.00,
+                "co2": 0.18,
+                "speed": 733
+            }
+        ]
+    },
+    {
+        "name": "B737-700",
+        "price": 4085576,
+        "speed": 828,
+        "range": 6230,
+        "runway": 7550,
+        "capacity": 149,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 428986,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "CFM 56-7",
+                "fuel": 10.45,
+                "co2": 0.14,
+                "speed": 762
+            }
+        ]
+    },
+    {
+        "name": "B707",
+        "price": 4169974,
+        "speed": 977,
+        "range": 9913,
+        "runway": 6450,
+        "capacity": 144,
+        "type": "pax",
+        "picture": "b707.png",
+        "manufacturer": "Boeing",
+        "fuel": 18,
+        "co2": 0.22,
+        "A_check": {
+            "price": 1355242,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "PW JT3D",
+                "fuel": 18.36,
+                "co2": 0.22,
+                "speed": 1006
+            }
+        ]
+    },
+    {
+        "name": "B737-800",
+        "price": 4407858,
+        "speed": 780,
+        "range": 7000,
+        "runway": 7550,
+        "capacity": 184,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 462826,
+            "time": 470
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM56-7B27",
+                "fuel": 9.40,
+                "co2": 0.12,
+                "speed": 725
+            }
+        ]
+    },
+    {
+        "name": "B727-200",
+        "price": 4883110,
+        "speed": 953,
+        "range": 4450,
+        "runway": 6450,
+        "capacity": 189,
+        "type": "pax",
+        "picture": "b727-200.png",
+        "manufacturer": "Boeing",
+        "fuel": 15,
+        "co2": 0.19,
+        "A_check": {
+            "price": 1342856,
+            "time": 340
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 8,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "JT8D-7",
+                "fuel": 15.15,
+                "co2": 0.19,
+                "speed": 972
+            }
+        ]
+    },
+    {
+        "name": "B737-900",
+        "price": 5535200,
+        "speed": 828,
+        "range": 3815,
+        "runway": 7550,
+        "capacity": 177,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 387464,
+            "time": 470
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM56-7",
+                "fuel": 10.10,
+                "co2": 0.12,
+                "speed": 836
+            }
+        ]
+    },
+    {
+        "name": "B737-700ER",
+        "price": 5656525,
+        "speed": 828,
+        "range": 10200,
+        "runway": 7550,
+        "capacity": 126,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 339392,
+            "time": 460
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "CFM56-7B",
+                "fuel": 10.78,
+                "co2": 0.14,
+                "speed": 770
+            }
+        ]
+    },
+    {
+        "name": "B757-300",
+        "price": 7002640,
+        "speed": 850,
+        "range": 6421,
+        "runway": 7800,
+        "capacity": 243,
+        "type": "pax",
+        "picture": "b757.png",
+        "manufacturer": "Boeing",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 735278,
+            "time": 470
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "PW2037",
+                "fuel": 15.81,
+                "co2": 0.21,
+                "speed": 842
+            },
+            {
+                "name": "PW2040",
+                "fuel": 15.30,
+                "co2": 0.21,
+                "speed": 774
+            },
+            {
+                "name": "PW2043",
+                "fuel": 18.36,
+                "co2": 0.21,
+                "speed": 867
+            },
+            {
+                "name": "RR RB211",
+                "fuel": 17.00,
+                "co2": 0.21,
+                "speed": 799
+            }
+        ]
+    },
+    {
+        "name": "B767-200",
+        "price": 7882711,
+        "speed": 913,
+        "range": 7300,
+        "runway": 7800,
+        "capacity": 224,
+        "type": "pax",
+        "picture": "b767.png",
+        "manufacturer": "Boeing",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 1615956,
+            "time": 320
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 7,
+            "engineers": 2,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "CF6-80A",
+                "fuel": 18.19,
+                "co2": 0.21,
+                "speed": 1013
+            },
+            {
+                "name": "CF6-80C3",
+                "fuel": 17.68,
+                "co2": 0.21,
+                "speed": 931
+            },
+            {
+                "name": "JT9D-7R4",
+                "fuel": 15.81,
+                "co2": 0.21,
+                "speed": 895
+            },
+            {
+                "name": "PW 4000",
+                "fuel": 17.85,
+                "co2": 0.21,
+                "speed": 950
+            }
+        ]
+    },
+    {
+        "name": "B737-900ER",
+        "price": 9225912,
+        "speed": 823,
+        "range": 5925,
+        "runway": 7550,
+        "capacity": 215,
+        "type": "pax",
+        "picture": "b737.gif",
+        "manufacturer": "Boeing",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 1014850,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM56-7",
+                "fuel": 11.11,
+                "co2": 0.14,
+                "speed": 831
+            }
+        ]
+    },
+    {
+        "name": "B757-200",
+        "price": 9723701,
+        "speed": 850,
+        "range": 7222,
+        "runway": 7800,
+        "capacity": 200,
+        "type": "pax",
+        "picture": "b757.png",
+        "manufacturer": "Boeing",
+        "fuel": 12,
+        "co2": 0.15,
+        "A_check": {
+            "price": 1798884,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "PW2037",
+                "fuel": 11.16,
+                "co2": 0.15,
+                "speed": 842
+            },
+            {
+                "name": "PW2040",
+                "fuel": 10.80,
+                "co2": 0.15,
+                "speed": 774
+            },
+            {
+                "name": "PW2043",
+                "fuel": 12.96,
+                "co2": 0.15,
+                "speed": 867
+            },
+            {
+                "name": "RR RB211",
+                "fuel": 12.00,
+                "co2": 0.15,
+                "speed": 799
+            }
+        ]
+    },
+    {
+        "name": "B767-200ER",
+        "price": 14114834,
+        "speed": 913,
+        "range": 12200,
+        "runway": 7800,
+        "capacity": 224,
+        "type": "pax",
+        "picture": "b767.png",
+        "manufacturer": "Boeing",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 2611244,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 7,
+            "engineers": 2,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "GE CF6-80C2",
+                "fuel": 16.32,
+                "co2": 0.20,
+                "speed": 995
+            },
+            {
+                "name": "PW4094",
+                "fuel": 17.60,
+                "co2": 0.20,
+                "speed": 977
+            }
+        ]
+    },
+    {
+        "name": "B737 MAX 7",
+        "shortcut": "b737max7",
+        "price": 17346513,
+        "speed": 839,
+        "range": 6850,
+        "runway": 7300,
+        "capacity": 160,
+        "type": "pax",
+        "picture": "b737max.png",
+        "manufacturer": "Boeing",
+        "fuel": 7,
+        "co2": 0.09,
+        "A_check": {
+            "price": 693860,
+            "time": 550
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM LEAP-1B",
+                "fuel": 7.21,
+                "co2": 0.09,
+                "speed": 881
+            }
+        ]
+    },
+    {
+        "name": "B737 MAX 8",
+        "shortcut": "b737max8",
+        "price": 18011300,
+        "speed": 839,
+        "range": 6500,
+        "runway": 7500,
+        "capacity": 180,
+        "type": "pax",
+        "picture": "b737max.png",
+        "manufacturer": "Boeing",
+        "fuel": 7,
+        "co2": 0.09,
+        "A_check": {
+            "price": 720452,
+            "time": 520
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 3,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM LEAP-1B",
+                "fuel": 7.21,
+                "co2": 0.09,
+                "speed": 881
+            }
+        ]
+    },
+    {
+        "name": "B737 MAX 9",
+        "shortcut": "b737max9",
+        "price": 18849600,
+        "speed": 839,
+        "range": 7000,
+        "runway": 7550,
+        "capacity": 200,
+        "type": "pax",
+        "picture": "b737max.png",
+        "manufacturer": "Boeing",
+        "fuel": 7,
+        "co2": 0.09,
+        "A_check": {
+            "price": 753984,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM LEAP-1B",
+                "fuel": 7.21,
+                "co2": 0.09,
+                "speed": 881
+            }
+        ]
+    },
+    {
+        "name": "B787-8",
+        "price": 19411920,
+        "speed": 903,
+        "range": 14500,
+        "runway": 9000,
+        "capacity": 250,
+        "type": "pax",
+        "picture": "b787.png",
+        "manufacturer": "Boeing",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 1358834,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 8,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "GE GEnx",
+                "fuel": 14.40,
+                "co2": 0.20,
+                "speed": 813
+            },
+            {
+                "name": "RR Trent 1000",
+                "fuel": 15.20,
+                "co2": 0.20,
+                "speed": 822
+            }
+        ]
+    },
+    {
+        "name": "B737 MAX 10",
+        "shortcut": "b737max10",
+        "price": 19649600,
+        "speed": 839,
+        "range": 7000,
+        "runway": 7600,
+        "capacity": 225,
+        "type": "pax",
+        "picture": "b737max10.png",
+        "manufacturer": "Boeing",
+        "fuel": 7,
+        "co2": 0.1,
+        "A_check": {
+            "price": 800000,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "CFM LEAP-1B",
+                "fuel": 7.21,
+                "co2": 0.10,
+                "speed": 881
+            }
+        ]
+    },
+    {
+        "name": "B767-300",
+        "price": 23356202,
+        "speed": 851,
+        "range": 7300,
+        "runway": 7800,
+        "capacity": 269,
+        "type": "pax",
+        "picture": "b767.png",
+        "manufacturer": "Boeing",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 4204116,
+            "time": 390
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CF6-80A",
+                "fuel": 20.33,
+                "co2": 0.24,
+                "speed": 945
+            },
+            {
+                "name": "CF6-80C3",
+                "fuel": 19.76,
+                "co2": 0.24,
+                "speed": 868
+            },
+            {
+                "name": "JT9D-7R4",
+                "fuel": 17.67,
+                "co2": 0.24,
+                "speed": 834
+            },
+            {
+                "name": "PW 4000",
+                "fuel": 19.95,
+                "co2": 0.24,
+                "speed": 885
+            }
+        ]
+    },
+    {
+        "name": "B767-300ER",
+        "price": 33435451,
+        "speed": 851,
+        "range": 11065,
+        "runway": 7800,
+        "capacity": 269,
+        "type": "pax",
+        "picture": "b767.png",
+        "manufacturer": "Boeing",
+        "fuel": 20,
+        "co2": 0.25,
+        "A_check": {
+            "price": 5349672,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "GE CF6-80C2",
+                "fuel": 20.40,
+                "co2": 0.25,
+                "speed": 928
+            },
+            {
+                "name": "PW4094",
+                "fuel": 22.00,
+                "co2": 0.25,
+                "speed": 911
+            },
+            {
+                "name": "RR RB211-524H",
+                "fuel": 20.20,
+                "co2": 0.25,
+                "speed": 936
+            }
+        ]
+    },
+    {
+        "name": "B767-400ER",
+        "price": 33694208,
+        "speed": 851,
+        "range": 10415,
+        "runway": 7800,
+        "capacity": 304,
+        "type": "pax",
+        "picture": "b767.png",
+        "manufacturer": "Boeing",
+        "fuel": 21,
+        "co2": 0.26,
+        "A_check": {
+            "price": 5391074,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "GE CF6-80C2",
+                "fuel": 21.42,
+                "co2": 0.26,
+                "speed": 928
+            },
+            {
+                "name": "PW4094",
+                "fuel": 23.10,
+                "co2": 0.26,
+                "speed": 911
+            }
+        ]
+    },
+    {
+        "name": "B747SP",
+        "price": 40824000,
+        "speed": 1000,
+        "range": 10800,
+        "runway": 7545,
+        "capacity": 350,
+        "type": "pax",
+        "picture": "b747sp.png",
+        "manufacturer": "Boeing",
+        "fuel": 22,
+        "co2": 0.26,
+        "A_check": {
+            "price": 3878280,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 11,
+            "engineers": 2,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "PW JT9D7A",
+                "fuel": 20.24,
+                "co2": 0.26,
+                "speed": 980
+            },
+            {
+                "name": "PW JT9D7F",
+                "fuel": 20.24,
+                "co2": 0.26,
+                "speed": 970
+            },
+            {
+                "name": "JT9D-7R4",
+                "fuel": 21.78,
+                "co2": 0.26,
+                "speed": 990
+            },
+            {
+                "name": "PW 4000",
+                "fuel": 21.12,
+                "co2": 0.26,
+                "speed": 980
+            }
+        ]
+    },
+    {
+        "name": "B747-100",
+        "price": 44393752,
+        "speed": 893,
+        "range": 9800,
+        "runway": 10250,
+        "capacity": 366,
+        "type": "pax",
+        "picture": "b747-100.png",
+        "manufacturer": "Boeing",
+        "fuel": 22,
+        "co2": 0.28,
+        "A_check": {
+            "price": 11320406,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 11,
+            "engineers": 2,
+            "tech": 8
+        },
+        "engines": [
+            {
+                "name": "GE CF645A2",
+                "fuel": 23.32,
+                "co2": 0.28,
+                "speed": 938
+            },
+            {
+                "name": "PW JT9D7A",
+                "fuel": 20.24,
+                "co2": 0.28,
+                "speed": 875
+            },
+            {
+                "name": "PW JT9D7F",
+                "fuel": 20.24,
+                "co2": 0.28,
+                "speed": 866
+            }
+        ]
+    },
+    {
+        "name": "B747-200B",
+        "price": 57530678,
+        "speed": 893,
+        "range": 12700,
+        "runway": 10250,
+        "capacity": 366,
+        "type": "pax",
+        "picture": "b747-200b.png",
+        "manufacturer": "Boeing",
+        "fuel": 22,
+        "co2": 0.28,
+        "A_check": {
+            "price": 14095016,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 11,
+            "engineers": 2,
+            "tech": 8
+        },
+        "engines": [
+            {
+                "name": "CF6-50E2",
+                "fuel": 21.34,
+                "co2": 0.28,
+                "speed": 839
+            },
+            {
+                "name": "JT9D-7R4J2",
+                "fuel": 21.34,
+                "co2": 0.28,
+                "speed": 822
+            },
+            {
+                "name": "RB211-524D4",
+                "fuel": 21.34,
+                "co2": 0.28,
+                "speed": 822
+            }
+        ]
+    },
+    {
+        "name": "B777-200",
+        "price": 60803647,
+        "speed": 905,
+        "range": 9695,
+        "runway": 9000,
+        "capacity": 400,
+        "type": "pax",
+        "picture": "b777-200.png",
+        "manufacturer": "Boeing",
+        "fuel": 18,
+        "co2": 0.22,
+        "A_check": {
+            "price": 7296438,
+            "time": 470
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 11,
+            "engineers": 3,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "GE90-77B",
+                "fuel": 17.46,
+                "co2": 0.22,
+                "speed": 815
+            },
+            {
+                "name": "PW 4077",
+                "fuel": 17.82,
+                "co2": 0.22,
+                "speed": 824
+            },
+            {
+                "name": "Trent 877",
+                "fuel": 18.54,
+                "co2": 0.22,
+                "speed": 950
+            }
+        ]
+    },
+    {
+        "name": "B747-300",
+        "price": 63231515,
+        "speed": 893,
+        "range": 12400,
+        "runway": 10250,
+        "capacity": 412,
+        "type": "pax",
+        "picture": "b747-300.png",
+        "manufacturer": "Boeing",
+        "fuel": 22,
+        "co2": 0.28,
+        "A_check": {
+            "price": 12330146,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 13,
+            "engineers": 4,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2B1",
+                "fuel": 20.68,
+                "co2": 0.28,
+                "speed": 884
+            },
+            {
+                "name": "JT9D-7R4G2",
+                "fuel": 22.66,
+                "co2": 0.28,
+                "speed": 973
+            },
+            {
+                "name": "RB211-524D4",
+                "fuel": 21.34,
+                "co2": 0.28,
+                "speed": 822
+            }
+        ]
+    },
+    {
+        "name": "B777-200LR",
+        "price": 65912406,
+        "speed": 905,
+        "range": 14500,
+        "runway": 11000,
+        "capacity": 300,
+        "type": "pax",
+        "picture": "b777-200.png",
+        "manufacturer": "Boeing",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 4284306,
+            "time": 490
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "GE90-110B",
+                "fuel": 17.86,
+                "co2": 0.24,
+                "speed": 878
+            },
+            {
+                "name": "GE90-115B",
+                "fuel": 19.19,
+                "co2": 0.24,
+                "speed": 986
+            }
+        ]
+    },
+    {
+        "name": "B777-300ER",
+        "price": 68243786,
+        "speed": 950,
+        "range": 14685,
+        "runway": 11000,
+        "capacity": 350,
+        "type": "pax",
+        "picture": "b777.png",
+        "manufacturer": "Boeing",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 5800722,
+            "time": 460
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 11,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "GE90-115B",
+                "fuel": 19.19,
+                "co2": 0.24,
+                "speed": 1036
+            }
+        ]
+    },
+    {
+        "name": "B787-9",
+        "price": 69997851,
+        "speed": 903,
+        "range": 14500,
+        "runway": 9000,
+        "capacity": 290,
+        "type": "pax",
+        "picture": "b787.png",
+        "manufacturer": "Boeing",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 4899850,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 10,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "GE GEnx",
+                "fuel": 14.40,
+                "co2": 0.20,
+                "speed": 813
+            },
+            {
+                "name": "RR Trent 1000",
+                "fuel": 15.20,
+                "co2": 0.20,
+                "speed": 822
+            }
+        ]
+    },
+    {
+        "name": "B747-400C",
+        "price": 72722924,
+        "speed": 910,
+        "range": 13360,
+        "runway": 10250,
+        "capacity": 410,
+        "type": "pax",
+        "picture": "b747.png",
+        "manufacturer": "Boeing",
+        "fuel": 21,
+        "co2": 0.26,
+        "A_check": {
+            "price": 10908438,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 13,
+            "engineers": 4,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2B5F",
+                "fuel": 19.32,
+                "co2": 0.26,
+                "speed": 819
+            },
+            {
+                "name": "PW4062",
+                "fuel": 20.16,
+                "co2": 0.26,
+                "speed": 883
+            },
+            {
+                "name": "RB211-524H2-T",
+                "fuel": 22.05,
+                "co2": 0.26,
+                "speed": 1010
+            }
+        ]
+    },
+    {
+        "name": "B787-10",
+        "price": 72795638,
+        "speed": 945,
+        "range": 12000,
+        "runway": 8000,
+        "capacity": 440,
+        "type": "pax",
+        "picture": "b787-10.png",
+        "manufacturer": "Boeing",
+        "fuel": 19,
+        "co2": 0.21,
+        "A_check": {
+            "price": 6915586,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 11,
+            "engineers": 3,
+            "tech": 10
+        },
+        "engines": [
+            {
+                "name": "General Electric GEnx",
+                "fuel": 18.62,
+                "co2": 0.21,
+                "speed": 860
+            },
+            {
+                "name": "RR Trent 1000",
+                "fuel": 18.05,
+                "co2": 0.21,
+                "speed": 860
+            }
+        ]
+    },
+    {
+        "name": "B777-8X",
+        "price": 77983382,
+        "speed": 980,
+        "range": 16100,
+        "runway": 9000,
+        "capacity": 350,
+        "type": "pax",
+        "picture": "b777.png",
+        "manufacturer": "Boeing",
+        "fuel": 20,
+        "co2": 0.25,
+        "A_check": {
+            "price": 3119336,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 15,
+            "engineers": 6,
+            "tech": 16
+        },
+        "engines": [
+            {
+                "name": "GE9X",
+                "fuel": 19.60,
+                "co2": 0.25,
+                "speed": 951
+            }
+        ]
+    },
+    {
+        "name": "B747-400D",
+        "price": 80125136,
+        "speed": 910,
+        "range": 2905,
+        "runway": 10250,
+        "capacity": 568,
+        "type": "pax",
+        "picture": "b747.png",
+        "manufacturer": "Boeing",
+        "fuel": 22,
+        "co2": 0.28,
+        "A_check": {
+            "price": 11217520,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 14,
+            "engineers": 6,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2B1F",
+                "fuel": 20.24,
+                "co2": 0.28,
+                "speed": 846
+            },
+            {
+                "name": "PW 4062",
+                "fuel": 23.98,
+                "co2": 0.28,
+                "speed": 1010
+            }
+        ]
+    },
+    {
+        "name": "B777-200ER",
+        "price": 84172921,
+        "speed": 905,
+        "range": 14260,
+        "runway": 11000,
+        "capacity": 400,
+        "type": "pax",
+        "picture": "b777-200.png",
+        "manufacturer": "Boeing",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 9259022,
+            "time": 480
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 11,
+            "engineers": 3,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "GE90-94B",
+                "fuel": 17.67,
+                "co2": 0.24,
+                "speed": 842
+            },
+            {
+                "name": "PW 4090",
+                "fuel": 17.86,
+                "co2": 0.24,
+                "speed": 860
+            },
+            {
+                "name": "Trent 895",
+                "fuel": 19.19,
+                "co2": 0.24,
+                "speed": 1014
+            }
+        ]
+    },
+    {
+        "name": "B777-300",
+        "price": 89987157,
+        "speed": 905,
+        "range": 11135,
+        "runway": 9000,
+        "capacity": 451,
+        "type": "pax",
+        "picture": "b777.png",
+        "manufacturer": "Boeing",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 9898588,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 13,
+            "engineers": 5,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "GE90-94B",
+                "fuel": 17.67,
+                "co2": 0.24,
+                "speed": 878
+            },
+            {
+                "name": "PW 4098",
+                "fuel": 19.00,
+                "co2": 0.24,
+                "speed": 824
+            },
+            {
+                "name": "Trent 892",
+                "fuel": 18.62,
+                "co2": 0.24,
+                "speed": 833
+            }
+        ]
+    },
+    {
+        "name": "B777-9X",
+        "price": 91150989,
+        "speed": 960,
+        "range": 14500,
+        "runway": 9000,
+        "capacity": 406,
+        "type": "pax",
+        "picture": "b777.png",
+        "manufacturer": "Boeing",
+        "fuel": 22,
+        "co2": 0.28,
+        "A_check": {
+            "price": 3646040,
+            "time": 540
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 15,
+            "engineers": 6,
+            "tech": 16
+        },
+        "engines": [
+            {
+                "name": "GE9X",
+                "fuel": 21.56,
+                "co2": 0.28,
+                "speed": 931
+            }
+        ]
+    },
+    {
+        "name": "B747-400",
+        "price": 92136845,
+        "speed": 893,
+        "range": 14500,
+        "runway": 10250,
+        "capacity": 416,
+        "type": "pax",
+        "picture": "b747.png",
+        "manufacturer": "Boeing",
+        "fuel": 21,
+        "co2": 0.18,
+        "A_check": {
+            "price": 14281210,
+            "time": 330
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 13,
+            "engineers": 4,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "GE CF-6-80C2b5F",
+                "fuel": 21.21,
+                "co2": 0.18,
+                "speed": 947
+            },
+            {
+                "name": "PW 4056",
+                "fuel": 22.89,
+                "co2": 0.18,
+                "speed": 982
+            },
+            {
+                "name": "PW 4062",
+                "fuel": 20.16,
+                "co2": 0.18,
+                "speed": 866
+            },
+            {
+                "name": "RR RB211-524",
+                "fuel": 20.79,
+                "co2": 0.18,
+                "speed": 884
+            }
+        ]
+    },
+    {
+        "name": "B747-400ER",
+        "price": 97556659,
+        "speed": 893,
+        "range": 14500,
+        "runway": 10250,
+        "capacity": 416,
+        "type": "pax",
+        "picture": "b747.png",
+        "manufacturer": "Boeing",
+        "fuel": 21,
+        "co2": 0.26,
+        "A_check": {
+            "price": 8292316,
+            "time": 450
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 13,
+            "engineers": 4,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "GE CF-6-80C2B5F",
+                "fuel": 19.32,
+                "co2": 0.26,
+                "speed": 804
+            },
+            {
+                "name": "PW 4062",
+                "fuel": 20.16,
+                "co2": 0.26,
+                "speed": 866
+            }
+        ]
+    },
+    {
+        "name": "B747-8",
+        "price": 121097727,
+        "speed": 988,
+        "range": 14815,
+        "runway": 10250,
+        "capacity": 467,
+        "type": "pax",
+        "picture": "b747.png",
+        "manufacturer": "Boeing",
+        "fuel": 21,
+        "co2": 0.26,
+        "A_check": {
+            "price": 8476840,
+            "time": 500
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 13,
+            "engineers": 6,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "GEnx-2B67",
+                "fuel": 21.84,
+                "co2": 0.26,
+                "speed": 1097
+            }
+        ]
+    },
+    {
+        "name": "B777-300LR",
+        "price": 131844032,
+        "speed": 950,
+        "range": 14500,
+        "runway": 11000,
+        "capacity": 451,
+        "type": "pax",
+        "picture": "b777.png",
+        "manufacturer": "Boeing",
+        "fuel": 21,
+        "co2": 0.26,
+        "A_check": {
+            "price": 10547522,
+            "time": 460
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 13,
+            "engineers": 5,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "GE 90-110B1",
+                "fuel": 21.63,
+                "co2": 0.26,
+                "speed": 1026
+            }
+        ]
+    },
+    {
+        "name": "B727-200F",
+        "price": 6766000,
+        "speed": 800,
+        "range": 4400,
+        "runway": 6450,
+        "capacity": 39800,
+        "type": "cargo",
+        "picture": "b727-200.png",
+        "manufacturer": "Boeing",
+        "fuel": 34,
+        "co2": 0.21,
+        "A_check": {
+            "price": 803960,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 2,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "P&W JT8D-15",
+                "fuel": 31.28,
+                "co2": 0.21,
+                "speed": 728
+            },
+            {
+                "name": "P&W JT8D-17",
+                "fuel": 34.00,
+                "co2": 0.21,
+                "speed": 752
+            },
+            {
+                "name": "P&W JT8D-7",
+                "fuel": 35.36,
+                "co2": 0.21,
+                "speed": 896
+            },
+            {
+                "name": "P&W JT8D-9",
+                "fuel": 35.70,
+                "co2": 0.21,
+                "speed": 896
+            }
+        ]
+    },
+    {
+        "name": "B-377SG",
+        "price": 7103144,
+        "speed": 467,
+        "range": 3219,
+        "runway": 10000,
+        "capacity": 54500,
+        "type": "cargo",
+        "picture": "b-377sg.png",
+        "manufacturer": "Boeing",
+        "fuel": 38,
+        "co2": 0.24,
+        "A_check": {
+            "price": 1100900,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 2,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "Allison 501-D22C",
+                "fuel": 34.96,
+                "co2": 0.24,
+                "speed": 425
+            }
+        ]
+    },
+    {
+        "name": "B757-200F",
+        "price": 22546869,
+        "speed": 850,
+        "range": 5834,
+        "runway": 7800,
+        "capacity": 127480,
+        "type": "cargo",
+        "picture": "b757.png",
+        "manufacturer": "Boeing",
+        "fuel": 32,
+        "co2": 0.22,
+        "A_check": {
+            "price": 2575096,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "PW2037",
+                "fuel": 33.92,
+                "co2": 0.22,
+                "speed": 927
+            },
+            {
+                "name": "PW2040",
+                "fuel": 28.80,
+                "co2": 0.22,
+                "speed": 774
+            },
+            {
+                "name": "PW2043",
+                "fuel": 34.56,
+                "co2": 0.22,
+                "speed": 867
+            },
+            {
+                "name": "RR RB211",
+                "fuel": 32.00,
+                "co2": 0.22,
+                "speed": 799
+            }
+        ]
+    },
+    {
+        "name": "B767-300F",
+        "price": 50654635,
+        "speed": 851,
+        "range": 2410,
+        "runway": 7800,
+        "capacity": 220000,
+        "type": "cargo",
+        "picture": "b767.png",
+        "manufacturer": "Boeing",
+        "fuel": 37,
+        "co2": 0.22,
+        "A_check": {
+            "price": 4444000,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2",
+                "fuel": 33.67,
+                "co2": 0.22,
+                "speed": 766
+            },
+            {
+                "name": "PW4000-94",
+                "fuel": 37.37,
+                "co2": 0.22,
+                "speed": 936
+            },
+            {
+                "name": "RR RB211-524H",
+                "fuel": 37.37,
+                "co2": 0.22,
+                "speed": 936
+            }
+        ]
+    },
+    {
+        "name": "B777 Freighter",
+        "shortcut": "b777f",
+        "price": 105984326,
+        "speed": 905,
+        "range": 9070,
+        "runway": 9000,
+        "capacity": 285000,
+        "type": "cargo",
+        "picture": "b777f.png",
+        "manufacturer": "Boeing",
+        "fuel": 33,
+        "co2": 0.19,
+        "A_check": {
+            "price": 5757000,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "GE90-110B1",
+                "fuel": 35.64,
+                "co2": 0.19,
+                "speed": 932
+            }
+        ]
+    },
+    {
+        "name": "B747-400F",
+        "price": 126598733,
+        "speed": 901,
+        "range": 8230,
+        "runway": 10250,
+        "capacity": 300000,
+        "type": "cargo",
+        "picture": "b747f.png",
+        "manufacturer": "Boeing",
+        "fuel": 39,
+        "co2": 0.2,
+        "A_check": {
+            "price": 6060000,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 2,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "CF6-80C2B5F",
+                "fuel": 35.88,
+                "co2": 0.20,
+                "speed": 811
+            },
+            {
+                "name": "PW4062",
+                "fuel": 37.44,
+                "co2": 0.20,
+                "speed": 874
+            },
+            {
+                "name": "RB211-524",
+                "fuel": 39.78,
+                "co2": 0.20,
+                "speed": 1009
+            }
+        ]
+    },
+    {
+        "name": "B747-8F",
+        "price": 135498765,
+        "speed": 903,
+        "range": 14815,
+        "runway": 10250,
+        "capacity": 303700,
+        "type": "cargo",
+        "picture": "b747.png",
+        "manufacturer": "Boeing",
+        "fuel": 25,
+        "co2": 0.2,
+        "A_check": {
+            "price": 6134740,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "GEnx-2B67",
+                "fuel": 26.00,
+                "co2": 0.20,
+                "speed": 1002
+            }
+        ]
+    }
+]

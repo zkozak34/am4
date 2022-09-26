@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Saab 340",
+        "shortcut": "s340",
+        "price": 109241,
+        "speed": 467,
+        "range": 1730,
+        "runway": 2000,
+        "capacity": 37,
+        "type": "pax",
+        "picture": "saab340.png",
+        "manufacturer": "Saab",
+        "fuel": 15,
+        "co2": 0.19,
+        "A_check": {
+            "price": 19664,
+            "time": 380
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "GE CT7-9B",
+                "fuel": 13.65,
+                "speed": 425
+            }
+        ]
+    },
+    {
+        "name": "Saab 90 Scandia",
+        "shortcut": "scandia",
+        "price": 113217,
+        "speed": 450,
+        "range": 2510,
+        "runway": 2000,
+        "capacity": 32,
+        "type": "pax",
+        "picture": "scandia.png",
+        "manufacturer": "Saab",
+        "fuel": 9,
+        "co2": 0.11,
+        "A_check": {
+            "price": 42456,
+            "time": 210
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "R-2180 Twin Wasp E",
+                "fuel": 9.27,
+                "speed": 477
+            }
+        ]
+    },
+    {
+        "name": "Saab 2000",
+        "shortcut": "s2000",
+        "price": 1033701,
+        "speed": 682,
+        "range": 2185,
+        "runway": 2000,
+        "capacity": 58,
+        "type": "pax",
+        "picture": "saab2000.png",
+        "manufacturer": "Saab",
+        "fuel": 6,
+        "co2": 0.08,
+        "A_check": {
+            "price": 129212,
+            "time": 460
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RR AE 2100",
+                "fuel": 6.42,
+                "speed": 737
+            }
+        ]
+    }
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "name": "Jetstream 31",
+        "shortcut": "j31",
+        "price": 323000,
+        "speed": 426,
+        "range": 1260,
+        "runway": 2000,
+        "capacity": 19,
+        "type": "pax",
+        "picture": "jet31.png",
+        "manufacturer": "British Aerospace",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 13976,
+            "time": 320
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "Garrett TPE331-10UG turboprop",
+                "fuel": 16.83,
+                "co2": 0.21,
+                "speed": 405
+            }
+        ]
+    },
+    {
+        "name": "Jetstream 41",
+        "shortcut": "j41",
+        "price": 510000,
+        "speed": 546,
+        "range": 1433,
+        "runway": 2000,
+        "capacity": 30,
+        "type": "pax",
+        "picture": "jet41.png",
+        "manufacturer": "British Aerospace",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 11580,
+            "time": 470
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "AlliedSignal TPE331-14GR/HR",
+                "fuel": 14.40,
+                "co2": 0.20,
+                "speed": 541
+            }
+        ]
+    },
+    {
+        "name": "BAe 146-300",
+        "shortcut": "bae146-300",
+        "price": 527912,
+        "speed": 780,
+        "range": 2400,
+        "runway": 3921,
+        "capacity": 112,
+        "type": "pax",
+        "picture": "bae146.png",
+        "manufacturer": "British Aerospace",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 50152,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 4,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "Honeywell ALF 502R-5",
+                "fuel": 17.67,
+                "co2": 0.24,
+                "speed": 702
+            }
+        ]
+    },
+    {
+        "name": "BAe146",
+        "shortcut": "bae146",
+        "price": 762450,
+        "speed": 750,
+        "range": 2000,
+        "runway": 6500,
+        "capacity": 85,
+        "type": "pax",
+        "picture": "bae146.png",
+        "manufacturer": "British Aerospace",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 137242,
+            "time": 330
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 1
+        },
+        "engines": [
+            {
+                "name": "Honeywell ALF 502R-5",
+                "fuel": 9.30,
+                "co2": 0.12,
+                "speed": 675
+            }
+        ]
+    }
+]

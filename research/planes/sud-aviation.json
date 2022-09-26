@@ -1,0 +1,224 @@
+[
+    {
+        "name": "Caravelle III",
+        "shortcut": "ciii",
+        "price": 581947,
+        "speed": 805,
+        "range": 1700,
+        "runway": 7700,
+        "capacity": 80,
+        "type": "pax",
+        "picture": "caravelle.png",
+        "manufacturer": "Sud Aviation",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 174584,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RA-29 Mk.531",
+                "fuel": 11.88,
+                "speed": 886
+            },
+            {
+                "name": "RA-29 Mk.531B",
+                "fuel": 10.34,
+                "speed": 741
+            }
+        ]
+    },
+    {
+        "name": "Caravelle IV-R",
+        "shortcut": "civ-r",
+        "price": 826463,
+        "speed": 845,
+        "range": 2300,
+        "runway": 7800,
+        "capacity": 80,
+        "type": "pax",
+        "picture": "caravelle.png",
+        "manufacturer": "Sud Aviation",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 239674,
+            "time": 380
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RA-29 Mk.533R",
+                "fuel": 10.67,
+                "speed": 828
+            }
+        ]
+    },
+    {
+        "name": "Caravelle IV-N",
+        "shortcut": "civ-n",
+        "price": 844429,
+        "speed": 845,
+        "range": 2350,
+        "runway": 7800,
+        "capacity": 80,
+        "type": "pax",
+        "picture": "caravelle.png",
+        "manufacturer": "Sud Aviation",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 249106,
+            "time": 320
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RA-29 Mk.531 RA-29 Mk. 531B",
+                "fuel": 10.34,
+                "speed": 761
+            }
+        ]
+    },
+    {
+        "name": "Caravelle 11R",
+        "shortcut": "c11r",
+        "price": 1089317,
+        "speed": 800,
+        "range": 2300,
+        "runway": 7550,
+        "capacity": 99,
+        "type": "pax",
+        "picture": "caravelle.png",
+        "manufacturer": "Sud Aviation",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 283222,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 3,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "P&W JT8D-7",
+                "fuel": 10.40,
+                "speed": 896
+            }
+        ]
+    },
+    {
+        "name": "Caravelle 10B",
+        "shortcut": "c10b",
+        "price": 1220219,
+        "speed": 825,
+        "range": 2650,
+        "runway": 7500,
+        "capacity": 105,
+        "type": "pax",
+        "picture": "caravelle.png",
+        "manufacturer": "Sud Aviation",
+        "fuel": 11,
+        "co2": 0.14,
+        "A_check": {
+            "price": 335560,
+            "time": 320
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 3,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "P&W JT8D-7",
+                "fuel": 11.44,
+                "speed": 924
+            }
+        ]
+    },
+    {
+        "name": "Caravelle 10R",
+        "shortcut": "c10r",
+        "price": 1322298,
+        "speed": 800,
+        "range": 3455,
+        "runway": 7500,
+        "capacity": 80,
+        "type": "pax",
+        "picture": "caravelle.png",
+        "manufacturer": "Sud Aviation",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 357020,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "P&W JT8D-7",
+                "fuel": 10.40,
+                "speed": 896
+            }
+        ]
+    },
+    {
+        "name": "Caravelle 12",
+        "shortcut": "c12",
+        "price": 1740539,
+        "speed": 924,
+        "range": 3465,
+        "runway": 7600,
+        "capacity": 140,
+        "type": "pax",
+        "picture": "caravelle.png",
+        "manufacturer": "Sud Aviation",
+        "fuel": 13,
+        "co2": 0.16,
+        "A_check": {
+            "price": 417730,
+            "time": 340
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 3,
+            "engineers": 2,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "P&W JT8D-9",
+                "fuel": 13.65,
+                "speed": 924
+            }
+        ]
+    }
+]

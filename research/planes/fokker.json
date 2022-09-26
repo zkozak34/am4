@@ -1,0 +1,445 @@
+[
+    {
+        "name": "F27-600",
+        "price": 127943,
+        "speed": 421,
+        "range": 1890,
+        "runway": 2000,
+        "capacity": 44,
+        "type": "pax",
+        "picture": "f27.png",
+        "manufacturer": "Fokker",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 33266,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Dart 7 Mk.536-7R",
+                "fuel": 14.72,
+                "speed": 392
+            }
+        ]
+    },
+    {
+        "name": "F27-200",
+        "price": 135138,
+        "speed": 480,
+        "range": 1926,
+        "runway": 2000,
+        "capacity": 40,
+        "type": "pax",
+        "picture": "f27.png",
+        "manufacturer": "Fokker",
+        "fuel": 16,
+        "co2": 0.2,
+        "A_check": {
+            "price": 40542,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Dart Mk 532",
+                "fuel": 16.00,
+                "speed": 451
+            }
+        ]
+    },
+    {
+        "name": "F27-500",
+        "price": 336145,
+        "speed": 518,
+        "range": 1826,
+        "runway": 2000,
+        "capacity": 52,
+        "type": "pax",
+        "picture": "f27.png",
+        "manufacturer": "Fokker",
+        "fuel": 17,
+        "co2": 0.21,
+        "A_check": {
+            "price": 87398,
+            "time": 380
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Dart 7 Mk.536-7R",
+                "fuel": 15.64,
+                "speed": 482
+            },
+            {
+                "name": "RR Dart Mk 582",
+                "fuel": 18.19,
+                "speed": 534
+            },
+            {
+                "name": "RR Dart Mk.532-7",
+                "fuel": 18.53,
+                "speed": 575
+            }
+        ]
+    },
+    {
+        "name": "F28-1000",
+        "price": 660013,
+        "speed": 849,
+        "range": 2000,
+        "runway": 2000,
+        "capacity": 65,
+        "type": "pax",
+        "picture": "f28.png",
+        "manufacturer": "Fokker",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 165004,
+            "time": 330
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR RB183-2 \"Spey\" Mk555-15",
+                "fuel": 10.20,
+                "speed": 908
+            }
+        ]
+    },
+    {
+        "name": "F27-400",
+        "price": 680000,
+        "speed": 453,
+        "range": 1468,
+        "runway": 2000,
+        "capacity": 40,
+        "type": "pax",
+        "picture": "f27.png",
+        "manufacturer": "Fokker",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 26246,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Dart 7",
+                "fuel": 17.10,
+                "speed": 412
+            }
+        ]
+    },
+    {
+        "name": "F28-6000",
+        "price": 707020,
+        "speed": 843,
+        "range": 1650,
+        "runway": 2000,
+        "capacity": 85,
+        "type": "pax",
+        "picture": "f28.png",
+        "manufacturer": "Fokker",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 155544,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR RB183-2 \"Spey\" Mk555-15H",
+                "fuel": 9.10,
+                "speed": 767
+            }
+        ]
+    },
+    {
+        "name": "F28-3000",
+        "price": 711521,
+        "speed": 843,
+        "range": 1900,
+        "runway": 2000,
+        "capacity": 65,
+        "type": "pax",
+        "picture": "f28.png",
+        "manufacturer": "Fokker",
+        "fuel": 9,
+        "co2": 0.11,
+        "A_check": {
+            "price": 170766,
+            "time": 390
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR RB183-2 \"Spey\" Mk555-15",
+                "fuel": 9.18,
+                "speed": 902
+            }
+        ]
+    },
+    {
+        "name": "Fokker 50",
+        "shortcut": "f50",
+        "price": 718458,
+        "speed": 630,
+        "range": 2055,
+        "runway": 2000,
+        "capacity": 58,
+        "type": "pax",
+        "picture": "f50.png",
+        "manufacturer": "Fokker",
+        "fuel": 7,
+        "co2": 0.09,
+        "A_check": {
+            "price": 114954,
+            "time": 380
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "PW125B",
+                "fuel": 6.79,
+                "speed": 624
+            }
+        ]
+    },
+    {
+        "name": "Fokker 70",
+        "shortcut": "f70",
+        "price": 725120,
+        "speed": 743,
+        "range": 2040,
+        "runway": 2000,
+        "capacity": 70,
+        "type": "pax",
+        "picture": "f70.png",
+        "manufacturer": "Fokker",
+        "fuel": 9,
+        "co2": 0.11,
+        "A_check": {
+            "price": 87014,
+            "time": 490
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RR Tay Mk.620",
+                "fuel": 9.45,
+                "speed": 817
+            }
+        ]
+    },
+    {
+        "name": "F27-100",
+        "price": 748000,
+        "speed": 480,
+        "range": 1315,
+        "runway": 2000,
+        "capacity": 44,
+        "type": "pax",
+        "picture": "f27.png",
+        "manufacturer": "Fokker",
+        "fuel": 19,
+        "co2": 0.24,
+        "A_check": {
+            "price": 26968,
+            "time": 360
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR Dart 6 Mk.514-7",
+                "fuel": 18.05,
+                "speed": 466
+            },
+            {
+                "name": "RR Dart Mk 582",
+                "fuel": 20.33,
+                "speed": 494
+            }
+        ]
+    },
+    {
+        "name": "F28-4000",
+        "price": 814144,
+        "speed": 843,
+        "range": 1900,
+        "runway": 2000,
+        "capacity": 85,
+        "type": "pax",
+        "picture": "f28.png",
+        "manufacturer": "Fokker",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 175040,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR RB183-2 \"Spey\" Mk555-15H",
+                "fuel": 9.10,
+                "speed": 767
+            },
+            {
+                "name": "RR RB183-2 \"Spey\" Mk555-15P",
+                "fuel": 10.40,
+                "speed": 944
+            }
+        ]
+    },
+    {
+        "name": "Fokker 70A",
+        "shortcut": "f70a",
+        "price": 828709,
+        "speed": 743,
+        "range": 2040,
+        "runway": 2000,
+        "capacity": 80,
+        "type": "pax",
+        "picture": "f70.png",
+        "manufacturer": "Fokker",
+        "fuel": 9,
+        "co2": 0.11,
+        "A_check": {
+            "price": 103588,
+            "time": 490
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 2
+        },
+        "engines": [
+            {
+                "name": "RR Tay Mk.620",
+                "fuel": 9.45,
+                "speed": 817
+            }
+        ]
+    },
+    {
+        "name": "F100",
+        "price": 861279,
+        "speed": 755,
+        "range": 4300,
+        "runway": 6000,
+        "capacity": 122,
+        "type": "pax",
+        "picture": "f100.png",
+        "manufacturer": "Fokker",
+        "fuel": 22,
+        "co2": 0.16,
+        "A_check": {
+            "price": 81822,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 5,
+            "engineers": 2,
+            "tech": 6
+        },
+        "engines": [
+            {
+                "name": "RR Tay Mk.650-15",
+                "fuel": 20.68,
+                "speed": 695
+            }
+        ]
+    },
+    {
+        "name": "F28-2000",
+        "price": 1100175,
+        "speed": 849,
+        "range": 2743,
+        "runway": 2000,
+        "capacity": 79,
+        "type": "pax",
+        "picture": "f28.png",
+        "manufacturer": "Fokker",
+        "fuel": 10,
+        "co2": 0.12,
+        "A_check": {
+            "price": 264042,
+            "time": 350
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "RR RB183-2 \"Spey\" Mk555-15",
+                "fuel": 10.20,
+                "speed": 908
+            }
+        ]
+    }
+]

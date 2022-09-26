@@ -1,0 +1,155 @@
+[
+    {
+        "name": "L-1329 JetStar",
+        "shortcut": "l-1329",
+        "price": 132130,
+        "speed": 920,
+        "range": 4585,
+        "runway": 2000,
+        "capacity": 10,
+        "type": "pax",
+        "picture": "jetstar.png",
+        "manufacturer": "Lockheed",
+        "fuel": 9,
+        "co2": 0.11,
+        "A_check": {
+            "price": 40960,
+            "time": 320
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 1,
+            "engineers": 1,
+            "tech": 3
+        },
+        "engines": [
+            {
+                "name": "Garrett AiResearch TFE-731-3",
+                "fuel": 9.09,
+                "speed": 957
+            }
+        ]
+    },
+    {
+        "name": "L-188 Electra",
+        "shortcut": "l-188",
+        "price": 1242421,
+        "speed": 652,
+        "range": 3450,
+        "runway": 2000,
+        "capacity": 127,
+        "type": "pax",
+        "picture": "electra.png",
+        "manufacturer": "Lockheed",
+        "fuel": 13,
+        "co2": 0.16,
+        "A_check": {
+            "price": 372726,
+            "time": 390
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 3,
+            "engineers": 2,
+            "tech": 5
+        },
+        "engines": [
+            {
+                "name": "Allison 501-D13",
+                "fuel": 12.48,
+                "speed": 593
+            }
+        ]
+    },
+    {
+        "name": "L-1049G Super Constellation",
+        "shortcut": "l-1049g",
+        "price": 1802354,
+        "speed": 547,
+        "range": 8700,
+        "runway": 2000,
+        "capacity": 95,
+        "type": "pax",
+        "picture": "constellation.png",
+        "manufacturer": "Lockheed",
+        "fuel": 24,
+        "co2": 0.3,
+        "A_check": {
+            "price": 612800,
+            "time": 390
+        },
+        "staff": {
+            "pilots": 4,
+            "crew": 2,
+            "engineers": 1,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "Wright R-3350-DA3 Turbo Compound",
+                "fuel": 25.20,
+                "speed": 596
+            }
+        ]
+    },
+    {
+        "name": "L-1011-200",
+        "price": 24777200,
+        "speed": 855,
+        "range": 7420,
+        "runway": 2000,
+        "capacity": 263,
+        "type": "pax",
+        "picture": "l-1011-200.png",
+        "manufacturer": "Lockheed",
+        "fuel": 18,
+        "co2": 0.22,
+        "A_check": {
+            "price": 5327098,
+            "time": 370
+        },
+        "staff": {
+            "pilots": 3,
+            "crew": 9,
+            "engineers": 2,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "RR RB211-524B",
+                "fuel": 17.28,
+                "speed": 838
+            }
+        ]
+    },
+    {
+        "name": "L-1011-500",
+        "price": 33120715,
+        "speed": 894,
+        "range": 9900,
+        "runway": 9400,
+        "capacity": 315,
+        "type": "pax",
+        "picture": "l-1011-500.png",
+        "manufacturer": "Lockheed",
+        "fuel": 20,
+        "co2": 0.25,
+        "A_check": {
+            "price": 3146468,
+            "time": 400
+        },
+        "staff": {
+            "pilots": 2,
+            "crew": 9,
+            "engineers": 4,
+            "tech": 4
+        },
+        "engines": [
+            {
+                "name": "RR RB211-524B",
+                "fuel": 19.20,
+                "speed": 876
+            }
+        ]
+    }
+]
