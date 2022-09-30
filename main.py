@@ -1,3 +1,3 @@
-import src.db as db
+from src.api import API
 
-db = db.DB()
+api = API()
