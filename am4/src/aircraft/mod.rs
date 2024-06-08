@@ -2,18 +2,22 @@ pub mod custom;
 pub mod db;
 
 use rkyv::{Archive as Ra, Deserialize as Rd, Serialize as Rs};
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use std::fmt;
 use std::str::FromStr;
 use thiserror::Error;
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Ra, Rd, Rs)]
+#[cfg(feature = "wasm")]
+use wasm_bindgen::prelude::*;
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Ra, Rd, Rs)]
+#[cfg_attr(feature = "wasm", wasm_bindgen(getter_with_clone, inspectable))]
 #[archive(check_bytes)]
 pub struct Aircraft {
-    pub id: Id,
+    pub id: AcId,
     pub shortname: ShortName,
     pub manufacturer: String,
-    pub name: Name,
+    pub name: AcName,
     #[serde(rename = "type")]
     pub ac_type: AircraftType,
     pub priority: EnginePriority,
@@ -38,11 +42,12 @@ pub struct Aircraft {
     pub length: u8,
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
-pub struct Id(pub u16);
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub struct AcId(pub u16);
 
-impl FromStr for Id {
+impl FromStr for AcId {
     type Err = AircraftError;
 
     fn from_str(id: &str) -> Result<Self, Self::Err> {
@@ -52,8 +57,9 @@ impl FromStr for Id {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
+#[cfg_attr(feature = "wasm", wasm_bindgen(getter_with_clone))]
 pub struct ShortName(pub String);
 
 impl FromStr for ShortName {
@@ -67,11 +73,12 @@ impl FromStr for ShortName {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
-pub struct Name(pub String);
+#[cfg_attr(feature = "wasm", wasm_bindgen(getter_with_clone))]
+pub struct AcName(pub String);
 
-impl FromStr for Name {
+impl FromStr for AcName {
     type Err = AircraftError;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
@@ -82,8 +89,9 @@ impl FromStr for Name {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 pub struct EnginePriority(pub u8);
 
 impl FromStr for EnginePriority {
@@ -102,13 +110,15 @@ impl fmt::Display for EnginePriority {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Ra, Rd, Rs)]
 #[archive(check_bytes)]
 #[serde(rename_all = "lowercase")]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+#[repr(u8)]
 pub enum AircraftType {
-    Pax,
-    Cargo,
-    Vip,
+    Pax = 0,
+    Cargo = 1,
+    Vip = 2,
 }
 
 impl FromStr for AircraftType {

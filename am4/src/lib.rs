@@ -34,5 +34,38 @@ macro_rules! demand_version {
         "0"
     };
 }
-pub const DEM_FILENAME0: &str = concat!("demands0-v", demand_version!(), ".bin");
-pub const DEM_FILENAME1: &str = concat!("demands1-v", demand_version!(), ".bin");
+pub const DEM0_FILENAME: &str = concat!("demands0-v", demand_version!(), ".bin");
+pub const DEM1_FILENAME: &str = concat!("demands1-v", demand_version!(), ".bin");
+
+#[cfg(feature = "wasm")]
+use wasm_bindgen::prelude::*;
+
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub fn get_ac_filename() -> String {
+    AC_FILENAME.to_string()
+}
+
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub fn get_ap_filename() -> String {
+    AP_FILENAME.to_string()
+}
+
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub fn get_dem0_filename() -> String {
+    DEM0_FILENAME.to_string()
+}
+
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub fn get_dem1_filename() -> String {
+    DEM1_FILENAME.to_string()
+}
+
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub fn get_dist_filename() -> String {
+    DIST_FILENAME.to_string()
+}
+
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub fn get_version() -> String {
+    env!("CARGO_PKG_VERSION").to_string()
+}

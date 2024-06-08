@@ -1,27 +1,40 @@
 use crate::aircraft::EnginePriority;
 use crate::aircraft::{Aircraft, AircraftError};
+use serde::{Deserialize, Serialize};
 use std::collections::HashSet;
 use std::str::FromStr;
 
-#[derive(Debug)]
+#[cfg(feature = "wasm")]
+use wasm_bindgen::prelude::*;
+
+#[derive(Debug, Serialize, Deserialize)]
 pub struct CustomAircraft {
     pub aircraft: Aircraft, // owned for now
     pub modifiers: Modification,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Modification {
     pub mods: HashSet<Modifier>, // not using Vec to avoid duplicates
     pub engine: EnginePriority,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
 pub enum Modifier {
     Speed,
     Fuel,
     Co2,
     FourX,
     EasyBoost,
+}
+
+// NOTE: not #[wasm_bindgen]
+#[cfg(feature = "wasm")]
+impl From<CustomAircraft> for JsValue {
+    fn from(ac: CustomAircraft) -> JsValue {
+        use serde_wasm_bindgen::to_value;
+        to_value(&ac).unwrap()
+    }
 }
 
 impl CustomAircraft {

@@ -4,11 +4,16 @@ version = "0.2.0-alpha.0"
 authors = ["Abraham Cheung <abraham@ylcheung.com>"]
 edition = "2021"
 
+[features]
+wasm = ["wasm-bindgen", "serde-wasm-bindgen"]
+
 [dependencies]
 jaro_winkler = "0.1.0"
 serde = { version = "1.0.203", features = ["derive"] }
 thiserror = "1.0.61"
 rkyv = { version = "0.7.44", features = ["validation", "strict", "archive_le"] }
+wasm-bindgen = { version = "0.2.84", optional = true }
+serde-wasm-bindgen = { version = "0.6.5", optional = true }
 
 [dev-dependencies]
 rstest = "0.20.0"

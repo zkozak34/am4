@@ -1,0 +1,70 @@
+header {
+    width: 100%;
+    box-shadow: inset 0 -1px 0 #313744;
+
+    >#global-nav {
+        padding: .75rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: .75rem;
+
+        span#name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        span#version,
+        >#db-progress {
+            color: #aaa;
+        }
+
+        span#version {
+            vertical-align: super;
+            font-size: .75rem;
+        }
+    }
+
+    >#local-bar {
+        padding: 0 .75rem;
+
+        >nav {
+            >ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                >li {
+                    margin-right: 1rem;
+                    margin-bottom: .25rem;
+                    font-size: 0.9rem;
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+
+                        &:visited {
+                            color: inherit;
+                        }
+
+                        &:hover {
+                            color: #71a3dc;
+                        }
+                    }
+                }
+
+                >li#clear-cache {
+                    cursor: pointer;
+                    color: rgb(184, 154, 154);
+
+                    &:hover {
+                        color: #71a3dc;
+                    }
+                }
+            }
+        }
+    }
+}

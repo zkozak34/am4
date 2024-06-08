@@ -1,15 +1,19 @@
 pub mod db;
 
 use rkyv::{Archive as Ra, Deserialize as Rd, Serialize as Rs};
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use std::str::FromStr;
 use thiserror::Error;
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Ra, Rd, Rs)]
+#[cfg(feature = "wasm")]
+use wasm_bindgen::prelude::*;
+
+#[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Ra, Rd, Rs)]
 #[archive(check_bytes)]
+#[cfg_attr(feature = "wasm", wasm_bindgen(getter_with_clone, inspectable))]
 pub struct Airport {
-    pub id: Id,
-    pub name: Name,
+    pub id: ApId,
+    pub name: ApName,
     pub fullname: String,
     pub country: String,
     pub continent: String,
@@ -22,11 +26,12 @@ pub struct Airport {
     pub rwy_codes: Vec<String>,
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
-pub struct Id(pub u16);
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
+pub struct ApId(pub u16);
 
-impl FromStr for Id {
+impl FromStr for ApId {
     type Err = AirportError;
 
     fn from_str(id: &str) -> Result<Self, Self::Err> {
@@ -34,11 +39,12 @@ impl FromStr for Id {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
-pub struct Name(pub String);
+#[cfg_attr(feature = "wasm", wasm_bindgen(getter_with_clone))]
+pub struct ApName(pub String);
 
-impl FromStr for Name {
+impl FromStr for ApName {
     type Err = AirportError;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
@@ -49,8 +55,9 @@ impl FromStr for Name {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
+#[cfg_attr(feature = "wasm", wasm_bindgen(getter_with_clone))]
 pub struct Iata(pub String);
 
 impl FromStr for Iata {
@@ -64,8 +71,9 @@ impl FromStr for Iata {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Eq, Hash, Ra, Rd, Rs)]
 #[archive(check_bytes)]
+#[cfg_attr(feature = "wasm", wasm_bindgen(getter_with_clone))]
 pub struct Icao(pub String);
 
 impl FromStr for Icao {
@@ -79,8 +87,9 @@ impl FromStr for Icao {
     }
 }
 
-#[derive(Debug, Clone, Deserialize, PartialEq, Ra, Rd, Rs)]
+#[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Ra, Rd, Rs)]
 #[archive(check_bytes)]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 pub struct Point {
     pub lng: f32,
     pub lat: f32,
@@ -96,4 +105,11 @@ pub enum AirportError {
     InvalidIata,
     #[error("Invalid ICAO code: must be 4 characters")]
     InvalidIcao,
+}
+
+#[cfg(feature = "wasm")]
+impl From<AirportError> for JsValue {
+    fn from(err: AirportError) -> JsValue {
+        JsValue::from_str(&format!("{}", err))
+    }
 }

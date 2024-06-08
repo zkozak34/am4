@@ -10,6 +10,9 @@ Some implementation details
     - we do not use [self referential structs](https://stackoverflow.com/questions/32300132/why-cant-i-store-a-value-and-a-reference-to-that-value-in-the-same-struct/32300133#32300133) for simplicity
     - fuzzy finding: jaro winkler the query string against every single `K`: $O(n)$
   - they are immutable and do not allow addition/deletion.
+- wasm support: ADT errors are serialised to JavaScript strings
+  - ticket/config ADTs shall use [externally tagged](https://serde.rs/enum-representations.html) flavor of `serde_wasm_bindgen`
+  - rationale: [poor support](https://github.com/rustwasm/wasm-bindgen/issues/2407), [more info](https://flinect.com/blog/rust-wasm-with-typescript-serde)
 
 ### TODO
 - [ ] consider storing {y, 2j, 3f} to avoid repeated * ops in config.

@@ -49,3 +49,13 @@ pub enum ParseError {
     #[error("Invalid data length: expected {expected} routes, got {actual}")]
     InvalidDataLength { expected: usize, actual: usize },
 }
+
+#[cfg(feature = "wasm")]
+use wasm_bindgen::JsValue;
+
+#[cfg(feature = "wasm")]
+impl From<ParseError> for JsValue {
+    fn from(err: ParseError) -> JsValue {
+        JsValue::from_str(&format!("{}", err))
+    }
+}

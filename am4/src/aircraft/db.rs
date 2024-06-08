@@ -1,5 +1,5 @@
 use crate::aircraft::custom::{CustomAircraft, Modification};
-use crate::aircraft::{Aircraft, AircraftError, EnginePriority, Id, Name, ShortName};
+use crate::aircraft::{AcId, AcName, Aircraft, AircraftError, EnginePriority, ShortName};
 use crate::utils::ParseError;
 use crate::utils::{queue_suggestions, Suggestion, MAX_SUGGESTIONS};
 use jaro_winkler::jaro_winkler;
@@ -9,15 +9,18 @@ use std::collections::HashMap;
 use std::str::FromStr;
 use thiserror::Error;
 
+#[cfg(feature = "wasm")]
+use wasm_bindgen::prelude::*;
+
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub enum SearchKey {
-    Id(Id),
+    Id(AcId),
     ShortName(ShortName),
-    Name(Name),
+    Name(AcName),
 }
 
-impl From<Id> for SearchKey {
-    fn from(id: Id) -> Self {
+impl From<AcId> for SearchKey {
+    fn from(id: AcId) -> Self {
         SearchKey::Id(id)
     }
 }
@@ -28,18 +31,18 @@ impl From<ShortName> for SearchKey {
     }
 }
 
-impl From<Name> for SearchKey {
-    fn from(name: Name) -> Self {
-        SearchKey::Name(Name(name.0.to_uppercase()))
+impl From<AcName> for SearchKey {
+    fn from(name: AcName) -> Self {
+        SearchKey::Name(AcName(name.0.to_uppercase()))
     }
 }
 
 #[derive(Debug, Clone)]
 pub enum QueryKey {
     All(String),
-    Id(Id),
+    Id(AcId),
     ShortName(ShortName),
-    Name(Name),
+    Name(AcName),
 }
 
 #[derive(Debug, Clone)]
@@ -71,8 +74,8 @@ impl FromStr for QueryCtx {
             None => QueryKey::All(s.to_string()),
             Some((k, v)) => match k {
                 "SHORTNAME" => QueryKey::ShortName(ShortName(v.to_string())),
-                "NAME" => QueryKey::Name(Name(v.to_string())),
-                "ID" => QueryKey::Id(Id::from_str(v)?),
+                "NAME" => QueryKey::Name(AcName(v.to_string())),
+                "ID" => QueryKey::Id(AcId::from_str(v)?),
                 v => return Err(AircraftSearchError::InvalidColumnSpecifier(v.to_string())),
             },
         };
@@ -88,11 +91,11 @@ impl From<&QueryCtx> for Result<SearchKey, AircraftSearchError> {
     fn from(ctx: &QueryCtx) -> Self {
         match &ctx.key {
             QueryKey::All(s) => {
-                if let Ok(v) = Id::from_str(s) {
+                if let Ok(v) = AcId::from_str(s) {
                     Ok(SearchKey::from(v))
                 } else if let Ok(v) = ShortName::from_str(s) {
                     Ok(SearchKey::from(v))
-                } else if let Ok(v) = Name::from_str(s) {
+                } else if let Ok(v) = AcName::from_str(s) {
                     Ok(SearchKey::from(v))
                 } else {
                     // all parsers failed, we can be sure it does not exist in the database
@@ -110,13 +113,16 @@ pub type AircraftVariants = HashMap<EnginePriority, usize>;
 
 /// A collection of aircrafts
 #[derive(Debug)]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 pub struct Aircrafts {
     data: Vec<Aircraft>,
     index: HashMap<SearchKey, AircraftVariants>,
 }
 
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 impl Aircrafts {
-    pub fn from_bytes(buffer: &[u8]) -> Result<Self, ParseError> {
+    #[wasm_bindgen(constructor)]
+    pub fn from_bytes(buffer: &[u8]) -> Result<Aircrafts, ParseError> {
         let archived = rkyv::check_archived_root::<Vec<Aircraft>>(buffer)
             .map_err(|e| ParseError::ArchiveError(e.to_string()))?;
 
@@ -145,7 +151,9 @@ impl Aircrafts {
 
         Ok(Self { data, index })
     }
+}
 
+impl Aircrafts {
     /// Search for an aircraft, defaulting to the engine that gives the fastest speed, (priority == 0, fastest)
     pub fn search(&self, s: &str) -> Result<CustomAircraft, AircraftSearchError> {
         let ctx = QueryCtx::from_str(s)?;

@@ -1,43 +1,39 @@
-#[allow(non_snake_case)]
-mod components;
-mod db;
+pub use am4::aircraft::{db::Aircrafts, Aircraft};
+use am4::airport::db::AirportSearchError;
+pub use am4::airport::{db::Airports, Airport};
+use std::cell::RefCell;
+use wasm_bindgen::prelude::*;
+use web_sys::js_sys::Uint8Array;
+// use serde_wasm_bindgen;
 
-use components::nav::Header;
-use components::aircraft::ACSearch;
-use components::airport::APSearch;
-use db::{Idb, Database, LoadDbProgress};
+#[wasm_bindgen]
+pub fn init() {
+    console_error_panic_hook::set_once();
+}
 
-use leptos::*;
-#[component]
-#[allow(non_snake_case)]
-pub fn App() -> impl IntoView {
-    let database = store_value::<Option<Database>>(None);
-    let (progress, set_progress) = create_signal(LoadDbProgress::Starting);
+thread_local! {
+    static AIRCRAFTS: RefCell<Option<Aircrafts>> = RefCell::new(None);
+    static AIRPORTS: RefCell<Option<Airports>> = RefCell::new(None);
+}
 
-    provide_context(database);
-    create_resource(
-        || (),
-        move |_| async move {
-            set_progress.set(LoadDbProgress::IDBConnect);
-            match Idb::connect().await.unwrap().init_db(&|msg| set_progress.set(msg)).await {
-                Ok(db) => {
-                    database.set_value(Some(db));
-                    set_progress.set(LoadDbProgress::Loaded);
-                }
-                Err(e) => set_progress.set(LoadDbProgress::Err(e)),
-            }
-        },
-    );
+#[wasm_bindgen]
+pub fn populate_aircrafts(arr: Uint8Array) {
+    let aircrafts = Aircrafts::from_bytes(&(arr.to_vec())).unwrap();
+    AIRCRAFTS.with(|a| *a.borrow_mut() = Some(aircrafts));
+}
 
-    view! {
-        <div id="app">
-            <Header progress/>
-            <main>
-                <Show when=move || progress.get() == LoadDbProgress::Loaded>
-                    <ACSearch/>
-                    <APSearch/>
-                </Show>
-            </main>
-        </div>
-    }
+#[wasm_bindgen]
+pub fn populate_airports(arr: Uint8Array) {
+    let airports = Airports::from_bytes(&(arr.to_vec())).unwrap();
+    AIRPORTS.with(|a| *a.borrow_mut() = Some(airports));
+}
+
+// js doesn't really allow returning a borrowed ref, so we have to clone
+#[wasm_bindgen]
+pub fn search_airport(s: &str) -> Result<Airport, AirportSearchError> {
+    AIRPORTS.with(|a| {
+        let airports = a.borrow();
+        let airports = airports.as_ref().expect("airports not populated");
+        airports.search(s).map(|a| a.clone())
+    })
 }

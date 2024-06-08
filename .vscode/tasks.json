@@ -46,6 +46,15 @@
             "label": "py: test",
             "type": "shell",
             "command": "${command:python.interpreterPath} -m pytest"
-        }
+        },
+        {
+            "label": "rust: build wasm",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/am4-web"
+            },
+            "command": "wasm-pack build",
+            "problemMatcher": []
+        },
     ]
 }

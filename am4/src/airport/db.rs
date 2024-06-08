@@ -1,4 +1,4 @@
-use crate::airport::{Airport, AirportError, Iata, Icao, Id, Name};
+use crate::airport::{Airport, AirportError, ApId, ApName, Iata, Icao};
 use crate::utils::ParseError;
 use crate::utils::{queue_suggestions, Suggestion, MAX_SUGGESTIONS};
 use jaro_winkler::jaro_winkler;
@@ -8,18 +8,21 @@ use std::collections::HashMap;
 use std::str::FromStr;
 use thiserror::Error;
 
+#[cfg(feature = "wasm")]
+use wasm_bindgen::prelude::*;
+
 pub const AIRPORT_COUNT: usize = 3907;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub enum SearchKey {
-    Id(Id),
+    Id(ApId),
     Iata(Iata),
     Icao(Icao),
-    Name(Name),
+    Name(ApName),
 }
 
-impl From<Id> for SearchKey {
-    fn from(id: Id) -> Self {
+impl From<ApId> for SearchKey {
+    fn from(id: ApId) -> Self {
         SearchKey::Id(id)
     }
 }
@@ -36,19 +39,19 @@ impl From<Icao> for SearchKey {
     }
 }
 
-impl From<Name> for SearchKey {
-    fn from(name: Name) -> Self {
-        SearchKey::Name(Name(name.0.to_uppercase()))
+impl From<ApName> for SearchKey {
+    fn from(name: ApName) -> Self {
+        SearchKey::Name(ApName(name.0.to_uppercase()))
     }
 }
 
 #[derive(Debug, Clone)]
 pub enum QueryKey {
     All(String),
-    Id(Id),
+    Id(ApId),
     Iata(Iata),
     Icao(Icao),
-    Name(Name),
+    Name(ApName),
 }
 
 #[derive(Debug, Clone)]
@@ -71,8 +74,8 @@ impl FromStr for QueryCtx {
             Some((k, v)) => match k {
                 "IATA" => QueryKey::Iata(Iata(v.to_string())),
                 "ICAO" => QueryKey::Icao(Icao(v.to_string())),
-                "NAME" => QueryKey::Name(Name(v.to_string())),
-                "ID" => QueryKey::Id(Id::from_str(v)?),
+                "NAME" => QueryKey::Name(ApName(v.to_string())),
+                "ID" => QueryKey::Id(ApId::from_str(v)?),
                 v => return Err(AirportSearchError::InvalidColumnSpecifier(v.to_string())),
             },
         };
@@ -85,13 +88,13 @@ impl From<QueryCtx> for Result<SearchKey, AirportSearchError> {
     fn from(ctx: QueryCtx) -> Self {
         match &ctx.key {
             QueryKey::All(s) => {
-                if let Ok(v) = Id::from_str(s) {
+                if let Ok(v) = ApId::from_str(s) {
                     Ok(SearchKey::from(v))
                 } else if let Ok(v) = Iata::from_str(s) {
                     Ok(SearchKey::from(v))
                 } else if let Ok(v) = Icao::from_str(s) {
                     Ok(SearchKey::from(v))
-                } else if let Ok(v) = Name::from_str(s) {
+                } else if let Ok(v) = ApName::from_str(s) {
                     Ok(SearchKey::from(v))
                 } else {
                     // all parsers failed, we can be sure it does not exist in the database
@@ -108,13 +111,16 @@ impl From<QueryCtx> for Result<SearchKey, AirportSearchError> {
 
 /// A collection of airports
 #[derive(Debug)]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 pub struct Airports {
     data: Vec<Airport>,
     index: HashMap<SearchKey, usize>,
 }
 
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 impl Airports {
-    pub fn from_bytes(buffer: &[u8]) -> Result<Self, ParseError> {
+    #[wasm_bindgen(constructor)]
+    pub fn from_bytes(buffer: &[u8]) -> Result<Airports, ParseError> {
         let archived = rkyv::check_archived_root::<Vec<Airport>>(buffer)
             .map_err(|e| ParseError::ArchiveError(e.to_string()))?;
 
@@ -133,7 +139,9 @@ impl Airports {
 
         Ok(Self { data, index })
     }
+}
 
+impl Airports {
     /// Search for an airport
     pub fn search(&self, s: &str) -> Result<&Airport, AirportSearchError> {
         let ctx = QueryCtx::from_str(s)?;
@@ -199,4 +207,11 @@ pub enum AirportSearchError {
     AirportNotFound(QueryCtx),
     #[error(transparent)]
     Airport(#[from] AirportError),
+}
+
+#[cfg(feature = "wasm")]
+impl From<AirportSearchError> for JsValue {
+    fn from(err: AirportSearchError) -> JsValue {
+        JsValue::from_str(&format!("{}", err))
+    }
 }

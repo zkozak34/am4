@@ -1,6 +1,11 @@
 use crate::user::GameMode;
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug)]
+#[cfg(feature = "wasm")]
+use wasm_bindgen::prelude::*;
+
+#[derive(Debug, Serialize, Deserialize)]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 pub struct PaxTicket {
     pub y: u16,
     pub j: u16,
@@ -8,6 +13,7 @@ pub struct PaxTicket {
 }
 
 impl PaxTicket {
+    #[inline]
     pub fn from_optimal(distance: f64, game_mode: GameMode) -> Self {
         let (y, j, f) = if game_mode == GameMode::Easy {
             (
@@ -26,13 +32,15 @@ impl PaxTicket {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 pub struct CargoTicket {
     pub l: f32,
     pub h: f32,
 }
 
 impl CargoTicket {
+    #[inline]
     pub fn from_optimal(distance: f64, game_mode: GameMode) -> Self {
         match game_mode {
             GameMode::Easy => Self {
@@ -51,7 +59,8 @@ impl CargoTicket {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
+#[cfg_attr(feature = "wasm", wasm_bindgen)]
 pub struct VIPTicket {
     pub y: u16,
     pub j: u16,
@@ -59,6 +68,7 @@ pub struct VIPTicket {
 }
 
 impl VIPTicket {
+    #[inline]
     pub fn from_optimal(distance: f64) -> Self {
         let y = (1.22 * 1.7489 * (0.4 * distance + 170.0) - 2.0) as u16;
         let j = (1.20 * 1.7489 * (0.8 * distance + 560.0) - 2.0) as u16;
@@ -67,32 +77,17 @@ impl VIPTicket {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
 pub enum Ticket {
     Pax(PaxTicket),
     Cargo(CargoTicket),
     VIP(VIPTicket),
 }
 
-impl Ticket {
-    pub fn pax(&self) -> Option<&PaxTicket> {
-        match self {
-            Ticket::Pax(pax_ticket) => Some(pax_ticket),
-            _ => None,
-        }
-    }
-
-    pub fn cargo(&self) -> Option<&CargoTicket> {
-        match self {
-            Ticket::Cargo(cargo_ticket) => Some(cargo_ticket),
-            _ => None,
-        }
-    }
-
-    pub fn vip(&self) -> Option<&VIPTicket> {
-        match self {
-            Ticket::VIP(vip_ticket) => Some(vip_ticket),
-            _ => None,
-        }
+#[cfg(feature = "wasm")]
+impl From<Ticket> for JsValue {
+    fn from(ticket: Ticket) -> JsValue {
+        use serde_wasm_bindgen::to_value;
+        to_value(&ticket).unwrap()
     }
 }

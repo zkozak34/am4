@@ -1,6 +1,6 @@
 mod utils;
 
-use am4::{AC_FILENAME, AP_FILENAME, DEM_FILENAME0, DEM_FILENAME1};
+use am4::{AC_FILENAME, AP_FILENAME, DEM0_FILENAME, DEM1_FILENAME};
 use polars::frame::row::Row;
 use polars::prelude::*;
 use std::io::Write;
@@ -61,17 +61,17 @@ fn convert_routes() {
     let buf = rkyv::to_bytes::<Vec<PaxDemand>, 45_782_236>(&dems).unwrap();
 
     let spl = buf.len() / 2;
-    let mut file0 = std::fs::File::create(DEM_FILENAME0).unwrap();
+    let mut file0 = std::fs::File::create(DEM0_FILENAME).unwrap();
     file0.write_all(&buf[..spl]).unwrap();
     println!("wrote ..{:} to {:?}", spl, file0);
 
-    let mut file1 = std::fs::File::create(DEM_FILENAME1).unwrap();
+    let mut file1 = std::fs::File::create(DEM1_FILENAME).unwrap();
     file1.write_all(&buf[spl..]).unwrap();
     println!("wrote {:}.. to {:?}", spl, file1);
 }
 
 fn convert_airports() {
-    use am4::airport::{Airport, Iata, Icao, Id, Name, Point};
+    use am4::airport::{Airport, ApId, ApName, Iata, Icao, Point};
 
     let mut schema = Schema::new();
     schema.with_column("id".into(), DataType::UInt16);
@@ -112,8 +112,8 @@ fn convert_airports() {
         };
 
         airports.push(Airport {
-            id: Id(get_u16(r[0].clone())),
-            name: Name::from_str(get_str(r[1].clone())).unwrap(),
+            id: ApId(get_u16(r[0].clone())),
+            name: ApName::from_str(get_str(r[1].clone())).unwrap(),
             fullname: get_str(r[2].clone()).to_string(),
             country: get_str(r[3].clone()).to_string(),
             continent: get_str(r[4].clone()).to_string(),
@@ -138,7 +138,7 @@ fn convert_airports() {
 }
 
 fn convert_aircrafts() {
-    use am4::aircraft::{Aircraft, AircraftType, EnginePriority, Id, Name, ShortName};
+    use am4::aircraft::{AcId, AcName, Aircraft, AircraftType, EnginePriority, ShortName};
 
     let mut schema = Schema::new();
     schema.with_column("id".into(), DataType::UInt16);
@@ -181,10 +181,10 @@ fn convert_aircrafts() {
         let r = df.get_row(i).unwrap().0;
 
         aircrafts.push(Aircraft {
-            id: Id(get_u16(r[0].clone())),
+            id: AcId(get_u16(r[0].clone())),
             shortname: ShortName::from_str(get_str(r[1].clone())).unwrap(),
             manufacturer: get_str(r[2].clone()).to_string(),
-            name: Name::from_str(get_str(r[3].clone())).unwrap(),
+            name: AcName::from_str(get_str(r[3].clone())).unwrap(),
             ac_type: match get_u8(r[4].clone()) {
                 0 => AircraftType::Pax,
                 1 => AircraftType::Cargo,

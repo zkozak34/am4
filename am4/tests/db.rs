@@ -1,7 +1,7 @@
 use am4::aircraft::db::Aircrafts;
 use am4::airport::db::Airports;
 use am4::route::db::{Demands, Distances};
-use am4::{AC_FILENAME, AP_FILENAME, DEM_FILENAME0, DEM_FILENAME1};
+use am4::{AC_FILENAME, AP_FILENAME, DEM0_FILENAME, DEM1_FILENAME};
 use once_cell::sync::Lazy;
 use std::fs::File;
 use std::io::Read;
@@ -24,8 +24,8 @@ pub static AIRPORTS: Lazy<Airports> =
 
 #[allow(dead_code)]
 pub static ROUTES: Lazy<Demands> = Lazy::new(|| {
-    let mut buf = get_bytes(DEM_FILENAME0).unwrap();
-    let b1 = get_bytes(DEM_FILENAME1).unwrap();
+    let mut buf = get_bytes(DEM0_FILENAME).unwrap();
+    let b1 = get_bytes(DEM1_FILENAME).unwrap();
     buf.extend(b1);
     Demands::from_bytes(&buf).unwrap()
 });
