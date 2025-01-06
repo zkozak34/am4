@@ -1,0 +1,363 @@
+{
+    "info": {
+        "name": "AM4Tools V2 API",
+        "description": "A collection of calculators and tools for Airline Manager 4",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "version": "0.1.8"
+    },
+    "item": [
+        {
+            "name": "Aircraft",
+            "item": [
+                {
+                    "name": "Search Aircraft",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{baseUrl}}/ac/search?query=a380",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "ac",
+                                "search"
+                            ],
+                            "query": [
+                                {
+                                    "key": "query",
+                                    "value": "a380",
+                                    "description": "Uçak arama sorgusu"
+                                }
+                            ]
+                        },
+                        "description": "Uçak arama endpoint'i"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Airport",
+            "item": [
+                {
+                    "name": "Search Airport",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{baseUrl}}/ap/search?query=ist",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "ap",
+                                "search"
+                            ],
+                            "query": [
+                                {
+                                    "key": "query",
+                                    "value": "ist",
+                                    "description": "Havalimanı arama sorgusu"
+                                }
+                            ]
+                        },
+                        "description": "Havalimanı arama endpoint'i"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Routes",
+            "item": [
+                {
+                    "name": "Route Info",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{baseUrl}}/route/info?origin=ist&destination=jfk",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "route",
+                                "info"
+                            ],
+                            "query": [
+                                {
+                                    "key": "origin",
+                                    "value": "ist",
+                                    "description": "Kalkış havalimanı"
+                                },
+                                {
+                                    "key": "destination",
+                                    "value": "jfk",
+                                    "description": "Varış havalimanı"
+                                }
+                            ]
+                        },
+                        "description": "İki havalimanı arası rota bilgisi"
+                    }
+                },
+                {
+                    "name": "Aircraft Route Info",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{baseUrl}}/ac_route/info?origin=ist&destination=jfk&ac=a380&config_algorithm=PROFIT&max_distance=15000&max_flight_time=24&tpd_mode=AUTO&trips_per_day_per_ac=1&sort_by=PER_TRIP&realism=false&wear_training=0&repair_training=0&l_training=0&h_training=0&fuel_training=0&co2_training=0&fuel_price=700&co2_price=120&accumulated_count=0&load=0.99&income_loss_tol=0.02&fourx=false",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "ac_route",
+                                "info"
+                            ],
+                            "query": [
+                                {
+                                    "key": "origin",
+                                    "value": "ist",
+                                    "description": "Kalkış havalimanı"
+                                },
+                                {
+                                    "key": "destination",
+                                    "value": "jfk",
+                                    "description": "Varış havalimanı"
+                                },
+                                {
+                                    "key": "ac",
+                                    "value": "a380",
+                                    "description": "Uçak tipi"
+                                },
+                                {
+                                    "key": "config_algorithm",
+                                    "value": "AUTO",
+                                    "description": "Konfigürasyon algoritması (AUTO, FJY, FYJ, JFY, JYF, YFJ, YJF, L, H)"
+                                },
+                                {
+                                    "key": "max_distance",
+                                    "value": "15000",
+                                    "description": "Maksimum mesafe (minimum: 100)"
+                                },
+                                {
+                                    "key": "max_flight_time",
+                                    "value": "24",
+                                    "description": "Maksimum uçuş süresi (saat cinsinden, minimum: 1)"
+                                },
+                                {
+                                    "key": "tpd_mode",
+                                    "value": "AUTO",
+                                    "description": "Günlük sefer modu (AUTO, STRICT, STRICT_ALLOW_MULTIPLE_AC)"
+                                },
+                                {
+                                    "key": "trips_per_day_per_ac",
+                                    "value": "1",
+                                    "description": "Uçak başına günlük sefer sayısı (minimum: 1)"
+                                },
+                                {
+                                    "key": "sort_by",
+                                    "value": "PER_TRIP",
+                                    "description": "Sıralama kriteri (PER_TRIP: Sefer başına, PER_AC_PER_DAY: Uçak başına günlük)"
+                                },
+                                {
+                                    "key": "realism",
+                                    "value": "false",
+                                    "description": "Gerçekçi mod"
+                                },
+                                {
+                                    "key": "wear_training",
+                                    "value": "0",
+                                    "description": "Yıpranma eğitimi seviyesi (0-5)"
+                                },
+                                {
+                                    "key": "repair_training",
+                                    "value": "0",
+                                    "description": "Tamir eğitimi seviyesi (0-5)"
+                                },
+                                {
+                                    "key": "l_training",
+                                    "value": "0",
+                                    "description": "İniş eğitimi seviyesi (0-6)"
+                                },
+                                {
+                                    "key": "h_training",
+                                    "value": "0",
+                                    "description": "Kalkış eğitimi seviyesi (0-6)"
+                                },
+                                {
+                                    "key": "fuel_training",
+                                    "value": "0",
+                                    "description": "Yakıt eğitimi seviyesi (0-3)"
+                                },
+                                {
+                                    "key": "co2_training",
+                                    "value": "0",
+                                    "description": "CO2 eğitimi seviyesi (0-5)"
+                                },
+                                {
+                                    "key": "fuel_price",
+                                    "value": "700",
+                                    "description": "Yakıt fiyatı (0-3000)"
+                                },
+                                {
+                                    "key": "co2_price",
+                                    "value": "120",
+                                    "description": "CO2 fiyatı (0-200)"
+                                },
+                                {
+                                    "key": "accumulated_count",
+                                    "value": "0",
+                                    "description": "Birikmiş uçuş sayısı (0-65535)"
+                                },
+                                {
+                                    "key": "load",
+                                    "value": "0.99",
+                                    "description": "Doluluk oranı (0-1)"
+                                },
+                                {
+                                    "key": "income_loss_tol",
+                                    "value": "0.02",
+                                    "description": "Gelir kaybı toleransı (0-1)"
+                                },
+                                {
+                                    "key": "fourx",
+                                    "value": "false",
+                                    "description": "4x modu"
+                                }
+                            ]
+                        },
+                        "description": "Belirli bir uçak için rota bilgisi"
+                    }
+                },
+                {
+                    "name": "Find Routes",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{baseUrl}}/ac_route/find?ap0=ist&ac=a380&config_algorithm=PROFIT&max_distance=15000&max_flight_time=24&tpd_mode=AUTO&trips_per_day_per_ac=1&sort_by=PER_TRIP&realism=false&wear_training=0&repair_training=0&l_training=0&h_training=0&fuel_training=0&co2_training=0&fuel_price=700&co2_price=120&accumulated_count=0&load=0.99&income_loss_tol=0.02&fourx=false",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "ac_route",
+                                "find"
+                            ],
+                            "query": [
+                                {
+                                    "key": "ap0",
+                                    "value": "ist",
+                                    "description": "Başlangıç havalimanı"
+                                },
+                                {
+                                    "key": "ac",
+                                    "value": "a380",
+                                    "description": "Uçak tipi"
+                                },
+                                {
+                                    "key": "config_algorithm",
+                                    "value": "AUTO",
+                                    "description": "Konfigürasyon algoritması (AUTO, FJY, FYJ, JFY, JYF, YFJ, YJF, L, H)"
+                                },
+                                {
+                                    "key": "max_distance",
+                                    "value": "15000",
+                                    "description": "Maksimum mesafe (minimum: 100)"
+                                },
+                                {
+                                    "key": "max_flight_time",
+                                    "value": "24",
+                                    "description": "Maksimum uçuş süresi (saat cinsinden, minimum: 1)"
+                                },
+                                {
+                                    "key": "tpd_mode",
+                                    "value": "AUTO",
+                                    "description": "Günlük sefer modu (AUTO, STRICT, STRICT_ALLOW_MULTIPLE_AC)"
+                                },
+                                {
+                                    "key": "trips_per_day_per_ac",
+                                    "value": "1",
+                                    "description": "Uçak başına günlük sefer sayısı (minimum: 1)"
+                                },
+                                {
+                                    "key": "sort_by",
+                                    "value": "PER_TRIP",
+                                    "description": "Sıralama kriteri (PER_TRIP: Sefer başına, PER_AC_PER_DAY: Uçak başına günlük)"
+                                },
+                                {
+                                    "key": "realism",
+                                    "value": "false",
+                                    "description": "Gerçekçi mod"
+                                },
+                                {
+                                    "key": "wear_training",
+                                    "value": "0",
+                                    "description": "Yıpranma eğitimi seviyesi (0-5)"
+                                },
+                                {
+                                    "key": "repair_training",
+                                    "value": "0",
+                                    "description": "Tamir eğitimi seviyesi (0-5)"
+                                },
+                                {
+                                    "key": "l_training",
+                                    "value": "0",
+                                    "description": "İniş eğitimi seviyesi (0-6)"
+                                },
+                                {
+                                    "key": "h_training",
+                                    "value": "0",
+                                    "description": "Kalkış eğitimi seviyesi (0-6)"
+                                },
+                                {
+                                    "key": "fuel_training",
+                                    "value": "0",
+                                    "description": "Yakıt eğitimi seviyesi (0-3)"
+                                },
+                                {
+                                    "key": "co2_training",
+                                    "value": "0",
+                                    "description": "CO2 eğitimi seviyesi (0-5)"
+                                },
+                                {
+                                    "key": "fuel_price",
+                                    "value": "700",
+                                    "description": "Yakıt fiyatı (0-3000)"
+                                },
+                                {
+                                    "key": "co2_price",
+                                    "value": "120",
+                                    "description": "CO2 fiyatı (0-200)"
+                                },
+                                {
+                                    "key": "accumulated_count",
+                                    "value": "0",
+                                    "description": "Birikmiş uçuş sayısı (0-65535)"
+                                },
+                                {
+                                    "key": "load",
+                                    "value": "0.99",
+                                    "description": "Doluluk oranı (0-1)"
+                                },
+                                {
+                                    "key": "income_loss_tol",
+                                    "value": "0.02",
+                                    "description": "Gelir kaybı toleransı (0-1)"
+                                },
+                                {
+                                    "key": "fourx",
+                                    "value": "false",
+                                    "description": "4x modu"
+                                }
+                            ]
+                        },
+                        "description": "Belirli bir uçak için olası rotaları bulma"
+                    }
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:8002",
+            "type": "string",
+            "description": "API'nin çalıştığı base URL"
+        }
+    ]
+}
