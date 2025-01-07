@@ -1,0 +1,63 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: am4_postgres
+    environment:
+      POSTGRES_DB: am4db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - am4_network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U admin -d am4db" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: am4_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+      - ./pgadmin_servers.json:/pgadmin4/servers.json
+    ports:
+      - "5050:80"
+    networks:
+      - am4_network
+    depends_on:
+      - postgres
+
+  data_importer:
+    build:
+      context: ./scripts
+      dockerfile: Dockerfile
+    container_name: am4_importer
+    volumes:
+      - ./utils/data:/data
+    networks:
+      - am4_network
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: am4db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+networks:
+  am4_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  pgadmin_data:

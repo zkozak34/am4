@@ -1,0 +1,14 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "AM4 PostgreSQL",
+            "Group": "Servers",
+            "Host": "postgres",
+            "Port": 5432,
+            "MaintenanceDB": "am4db",
+            "Username": "admin",
+            "Password": "admin123",
+            "SSLMode": "prefer"
+        }
+    }
+}
