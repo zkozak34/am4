@@ -1,7 +1,0 @@
-[package]
-name = "am4-app"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-am4 = { path = "../am4" }
